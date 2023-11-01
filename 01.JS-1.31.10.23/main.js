@@ -19,9 +19,9 @@
 
 // TASK2
 
-let number =652;
-let modulus=10;
-  console.log(65%35, 347%30)
+// let number =652;
+// let modulus=10;
+//   console.log(65%35, 347%30)
 
 
 //Task 4
