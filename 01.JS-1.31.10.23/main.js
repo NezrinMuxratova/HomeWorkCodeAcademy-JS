@@ -21,17 +21,17 @@
 
 // TASK2 duzgun
 
-<<<<<<< HEAD
+
 // let number =652;
 // let modulus=10;
 //   console.log(65%35, 347%30)
-=======
+
 // let number =385;
 // let first = number % 10
 //let second = ((number - first)/10)%10;
 //  let third = (((number - first)/10)-second)\10
 //   console.log( `${third} `, ${second}, ${first}))
->>>>>>> 569229319b3937cd2ef0849413db3353b1ab80b4
+
 
 //Task 3
 // let month = "January";
@@ -185,11 +185,11 @@
 // }
 
 //TASK 8
-let a=3;
-let b=4;
-let c=5;
-if( a+b>c && Math.abc(a-b)<c || a+c> b  && Math.abc(a-c)<b ){
-console.log(  `Ucbucaqdir`)
-}else{
-  console.log(  `Ucbucaq deyil` )
-}
+// let a=3;
+// let b=4;
+// let c=5;
+// if( a+b>c && Math.abc(a-b)<c || a+c> b  && Math.abc(a-c)<b ){
+// console.log(  `Ucbucaqdir`)
+// }else{
+//   console.log(  `Ucbucaq deyil` )
+// }
