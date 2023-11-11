@@ -56,7 +56,7 @@ const employees = [
 //   if (employees[i].department==="HR") {
 //     console.log(employees[i]);
 //   }
-  
+
 // }
 
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -82,7 +82,7 @@ let countries = [
   "Estonia",
   "Ethiopia",
   "Falkland Islands",
-  "Faroe Islands"
+  "Faroe Islands",
 ];
 
 //# Ölkələrin neçə hərfdən ibarət olduğunu çap edən proqram yazırsınız. Cavab konsolda bu şəkildə olmalıdır:
@@ -95,9 +95,8 @@ let countries = [
 
 // for (let i = 0; i< countries.length; i++) {
 //   console.log( `${countries[i]} ${countries[i].length}`);
-  
-// }
 
+// }
 
 //#Baş hərfi ilə son hərfi A olan  ölkələrin adını çap edən proqram yazırsınız.
 
@@ -106,6 +105,16 @@ let countries = [
 // if (countries[i].toLocaleLowerCase()[0]=== "a" && countries[i].toLocaleLowerCase()[countries[i].length-1]=== "a" ) {
 //   letterA.push(countries[i]);
 // }
-  
+
 // }
 // console.log(letterA);
+let samplaNews = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ut nemo veniam
+nihil error in, minima consectetur perspiciatis consequatur deserunt.
+`;
+let number = 0;
+for (let i = 0; i < samplaNews.length; i++) {
+  if (samplaNews[i] === " ") {
+    number++;
+  }
+}
+console.log(number);
