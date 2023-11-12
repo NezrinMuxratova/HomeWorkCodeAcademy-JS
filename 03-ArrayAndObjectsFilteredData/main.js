@@ -98,26 +98,29 @@ let arr = [
 // console.log(forEachName);
 
 // 5) "name"-i en uzun olan obyekti tapin
-let forEachName=[]
-arr.forEach((element) => {
-if ( element.name=max.length) {
-     forEachName.push(arr)
-}
- 
-})
+// const firstItem =arr.slice().sort((a,b)=> (a.name.length>b.name.length ? -1 : 1 ))[0];
+// console.log(firstItem.name);
 
-
-console.log(forEachName);
 // 6) "name"-i en uzun olan obyektin key'ni tapin
-
+// const firstItem = arr.slice().sort((a,b) => (a.name.length > b.name.length ? -1: 1 ) ) [0]
+// console.log(firstItem.key);
+ 
 // 7)  "name"-i en uzun olan obyektin indexin kvadratini hesablayin
 
 // 8) "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin. (filter)
-
+  
+// const filterLength=arr.filter((names)=> names.name.length === 4);
+// console.log(filterLength);
 // 9)  en boyuk "key" - i olan obyektin "name"-i ni tapin
-
+//  const firstItem= arr.slice().sort((a,b) => (a.key > b.key ? -1: 1  ))[0]
+// console.log(firstItem.name);
 // 10) terkibinde 2 'l' (el) herfi olan obyekt(ler)in index(ler)ini tapin.
-
+    const findIndex=arr.indexOf ((element) => element.name ==="l")
+    console.log(findIndex);
 // 11) terkibinde ən az 2 't' herfi olan obyekt(ler)i tapın.
 
 // 12) key'leri 10'dan boyuk ve "name"-i 'l' herfi ile bashlayan obyektleri tapaq
+  // let filterName=arr.filter((item) => {
+  //   return item.key>10 && item.name[0] === "l"
+  //   })
+  //   console.log(filterName);
