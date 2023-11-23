@@ -26,13 +26,13 @@ number.style.width="300px"
 number.style.border="none"
 number.style.borderRadius="5px"
 
-valueOneInput.style.width="150px"
+valueOneInput.style.width="155px"
 valueOneInput.style.border="none"
 valueOneInput.style.padding="5px"
 valueOneInput.style.outline="none"
 valueOneInput.style.borderRadius="2px"
 
-valueTwoInput.style.width="150px"
+valueTwoInput.style.width="155px"
 valueTwoInput.style.border="none"
 valueTwoInput.style.padding="5px"
 valueTwoInput.style.outline="none"
@@ -68,20 +68,20 @@ resetBtn.style.background="red"
 let count=0;
 let countInterval;
 additionBtn.addEventListener("click", function(){
- count+= +valueOneInput.value+ +valueTwoInput.value
+ count= +valueOneInput.value+ +valueTwoInput.value
  number.innerText=count
 })
 substractBtn.addEventListener("click", function(){
- count+= +valueOneInput.value - +valueTwoInput.value
+ count= +valueOneInput.value - +valueTwoInput.value
  number.innerText=count
 })
 multiplyBtn.addEventListener("click", function(){
-    count+= +valueTwoInput.value * +valueTwoInput.value
+    count= +valueTwoInput.value * +valueTwoInput.value
     number.innerText=count
 })
 
 divisonBtn.addEventListener("click", function(){
-    count += +valueOneInput.value / +valueTwoInput.value
+    count= +valueOneInput.value / +valueTwoInput.value
     number.innerText=count
 } )
 
