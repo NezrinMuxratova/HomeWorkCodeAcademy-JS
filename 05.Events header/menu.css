@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.headerMenu{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.menuSection{
+    background-color: black;
+}
+.fa-solid{
+    color:white
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (max-width:767px){
+    header{
+       padding: 5% ;  
+    }
+   
+}
+.headerbtn{
+    padding: 10px 25px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       row-gap: 20px;
+}
+#menu nav ul li a{
+color:white;
+text-align: center;
+
+}
+#menu nav ul li{
+padding: 5px 0;
+
+}
