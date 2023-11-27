@@ -18,3 +18,12 @@ window.addEventListener("scroll", function(){
       console.log(window.scrollY);
 })
 
+let menu=document.querySelector("#menu")
+let menuIcon=document.querySelector(".fa-bars")
+let menuIcon1=document.querySelector(".fa-xmark")
+
+menuIcon.onclick=function(){
+    menu.classList.toggle("open")
+    let Isopen=menu.classList.contains("open")
+    Isopen ? menuIcon1.classList("fa-xmark") : menuIcon1.classList("fa-bars")
+}
