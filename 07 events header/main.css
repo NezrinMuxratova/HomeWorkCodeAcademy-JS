@@ -42,6 +42,9 @@ column-gap: 20px;
     color: white;
 
 }
+nav.show{
+    display: block;
+}
 .fa-solid{
     display: none;
     color:white
@@ -56,9 +59,17 @@ column-gap: 20px;
     }
     nav{
         display: none;
+        position: fixed;
+        width: 100%;
+        top:67px;
+        left:0;
+        background-color: black;
     }
     
+    
 }
+ 
+
 .headerbtn{
     padding: 10px 25px;
     background-color: aquamarine;
