@@ -112,8 +112,8 @@ function addToFavorite(id) {
 }
 
 function setProductsToLocalSotarge(arr) {
-  localStorage.setItem("allProducts", JSON.stringify(arr));
+  localStorage.setItem("homePage", JSON.stringify(arr));
 }
 function getProductsToLocalSotarge() {
-  return JSON.parse(localStorage.getItem("allProducts"));
+  return JSON.parse(localStorage.getItem("homePage"));
 }
