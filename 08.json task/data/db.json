@@ -1,0 +1,156 @@
+{
+  "products": [
+      {
+          "brandName": "Chanel",
+          "price": "$6,999.00",
+          "color": "black",
+          "type": "classic",
+          "measure":"20x10x9.8 cm",
+          "image": "https://tr.hannari-shop.net/products/chanel-large-classic-handbag-chain-shoulder-bag-flap-black-caviar-g66"
+        },
+        {
+            "brandName": "Fendi",
+            "price": "₺5.800,00",
+        "color": "white",
+        "type": "classic",
+        "measure":"40.5x35x21.5",
+        "sku":"7122111035420",
+        "image": "https://cantanisantasi.com/canta/fendi-canta-beyaz-sunshine-large-tote-ithal-40-5x35x21-5-cm/"
+    },
+    {
+        "brandName": "Gucci",
+        "price": "₺3.200,00",
+        "color": "black",
+        "type": "classic",
+        "measure":"18×11 ",
+        "sku":"10022114024374",
+        "image": "https://cantanisantasi.com/canta/gucci-canta-dionysus-nano-classic-siyah-18x11-cm-ithal/"
+    },
+    {
+        "brandName": "Balenciaga",
+        "price": "₺ 4.500,00",
+        "color": "gri  silver",
+        "type": "work bag",
+        "measure":"31×23 cm",
+        "sku":"100221140243105258456",
+        "image": "https://www.pinterest.com/pin/839358449277732814/"
+    },
+    {
+        "brandName": "Dolce&Gabbana",
+        "price": "46.450 TL",
+        "color": "orange",
+        "type": "sport",
+        "measure":"20x116 cm ",
+        "image": "https://cantanisantasi.com/canta/gucci-canta-dionysus-nano-classic-siyah-18x11-cm-ithal/"
+    },
+    {
+        "brandName": "Mommy Bag ",
+        "price": "249,99 ₼",
+        "color": "black-white",
+        "type": "sport",
+        "measure":"50x110 cm ",
+        "sku":"TM-DG-UAM-1119-BG-0075",
+        "image": "https://cantanisantasi.com/canta/gucci-canta-dionysus-nano-classic-siyah-18x11-cm-ithal/"
+    },
+    {
+        "brandName": "Vakko ",
+        "price": "25666₼",
+        "color": "lilac",
+        "type": "Monogram",
+        "measure":"70x90 cm ",
+        "sku":"TM400192505",
+        "image": "https://www.vakko.com/canta/canta-pm400192505-0054-0054/"
+    },
+    {
+        "brandName": "Vakko ",
+        "price": "₺4.095",
+        "color": "black",
+        "type": "Monogram",
+        "measure":"60x120 cm ",
+        "sku":"M868188201081",
+        "image": "https://www.vakko.com/canta/canta-pm400192505-0054-0054/"
+    },
+    {
+        "brandName": "Miu Miu",
+        "price": "65.950TL",
+        "color": "pink",
+        "type": "shoulder bag",
+        "measure":"22x17 cm",
+        "sku":"123123123",
+        "image": "https://www.beymen.com/p_miu-miu-wander-pembe-kadin-deri-canta_1262989"
+    },
+    {
+        "brandName": "Miu Miu",
+        "price": "£1,997.78",
+        "color": "brown",
+        "type": "sport",
+        "measure":"40x30 cm",
+        "sku":"321654975",
+        "image": "https://www.lyst.co.uk/bags/miu-miu-powder-pink-nappa-leather-mini-crossbody-bag/"
+    },
+    {
+      "id": 1,
+      "brandName": "Chanel",
+      " price": "$330",
+      "color": "black",
+      "type": "classic",
+    "measure":"30x20x10 cm",
+      "image": "https://www.ciceksepeti.com/chanel-canta-siyah-kcm76541616"
+    },
+    {
+        "brandName": "Valentino Garavani",
+        "price": "3.800,00 TL",
+        "color": "red",
+        "type": "evening dress",
+        "measure":"23X16cm",
+        "sku":"321654975",
+        "image": "https://www.bircantam.com/valentino-garavani-rockstud-spike-k%C4%B1rm%C4%B1z%C4%B1-beykoz-canta"
+    },
+    {
+        "brandName": "Valentino Garavani",
+        "price": "97.950 TL",
+        "color": "bisque",
+        "type": "Rockstud",
+        "measure":"28X18cm",
+        "sku":"321654975",
+        "image": "https://www.beymen.com/p_valentino-garavani-rockstud-bej-kadin-deri-omuz-cantasi_1119310"
+    },
+    {
+        "brandName": "Balenciaga",
+        "price": "₺ 3.900,00",
+        "color": "nude camel silver",
+        "type": "work bag",
+        "measure":"23x15x10 cm",
+        "sku":"100221140243105258456",
+        "image": "https://cantanisantasi.com/canta/balenciaga-canta-hourglass-kucuk-boy-nude-camel-silver-23x15x10-cm/"
+    },
+    {
+        "brandName": "Hermes",
+        "price": "₺5.500,00",
+        "color": "bast blue",
+        "type": "classic",
+        "measure":"22cm",
+        "sku":"100221140243105",
+        "image": "https://cantanisantasi.com/canta/hermes-canta-kelly-22-cm-siyah-saks-mavi/"
+    },
+    {
+        "brandName": "Hermes",
+        "price": "₺5.500,00",
+        "color": "red",
+        "type": "evening dress",
+        "measure":"22x38cm",
+        "sku":"100221140243105258",
+        "image": "https://www.pinterest.com/pin/839358449277732814/"
+    },
+    {
+        "brandName": "Balenciaga",
+        "price": "₺ 3.000,000",
+        "color": "yellow",
+        "type": "in the form of lays",
+        "measure":"23×10 cm",
+        "sku":"100221140243105258456",
+        "image": "https://www.pazarlamasyon.com/balenciaga-dan-lay-s-paketi-gorunumlu-canta"
+    }
+  ]
+
+}
