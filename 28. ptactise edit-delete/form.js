@@ -23,6 +23,7 @@ if(id){
 
 form.addEventListener("submit", function(event){
     event.preventDefault()
+  
     let drawcard={
         title:input[0].value,
         body:textarea.value,
@@ -30,12 +31,19 @@ form.addEventListener("submit", function(event){
     }
     if (!id) {
       axios.post(`${BASE_URL}`, drawcard)
+      
     }else{
         axios.patch(`${BASE_URL}/${id}`, drawcard)
     }
     console.log(input);
     
     input.forEach((item) => {
+        item.value=""
+    })
+    textarea.forEach((item) => {
+        item.value=""
+    })
+    option.forEach((item) => {
         item.value=""
     })
 })
