@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(233, 232, 148, 0.9389005602240896) 100%
+  );
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+header {
+  background-color: rgba(235, 142, 157, 0.984);
+  margin-bottom: 20px;
+}
+.header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  
+}
+.search {
+  width: 220px;
+  border: none;
+  outline: none;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(158, 9, 9);
+}
+
+.search {
+  padding: 8px;
+  border-radius: 8px;
+  color:rgb(158, 9, 9);
+}
+::placeholder{
+  color:rgb(158, 9, 9);
+}
+.search:hover{
+  background-color: pink;
+}
+h2 {
+  color: rgb(161, 12, 12);
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 60%;
+  transition: all 0.2s;
+}
+.card {
+  border: 1px solid rgb(187, 183, 183);
+  width: 20%;
+  height: 60%;
+  padding: 20px;
+  list-style: 10px;
+  margin-bottom: 8px;
+  
+ 
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 200px;
+}
+.cards :hover {
+ background-color: bisque;
+ transition: all 0.8s;
+ /* border: 1px solid #cccccc; */
+
+
+}
+.text {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-text {
+  opacity: 0.7;
+}
+.Delete {
+  border: none;
+  background-color: rgb(158, 9, 9);
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  width: 70px;
+}
+.Delete:hover {
+  border: 1px solid rgb(158, 9, 9);
+  color: rgb(158, 9, 9);
+}
+.edit {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  width: 70px;
+}
+.edit:hover {
+  color: orange;
+  border: 1px solid orange;
+}
+
+.sort {
+  padding: 8px;
+  color: rgb(158, 9, 9);
+  background-color: pink;
+  border: 1px solid pink;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.sort:hover{
+  background-color: transparent;
+  border:1px solid rgb(158, 9, 9);
+}

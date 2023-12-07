@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(233, 232, 148, 0.9389005602240896) 100%
+  );
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+header {
+  background-color: rgba(235, 142, 157, 0.984);
+  margin-bottom: 50px;
+}
+.header {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+img{
+    width: 400px;
+}
+.form {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(158, 9, 9);
+}
+h2 {
+  color: rgb(161, 12, 12);
+}
+
+.blogAuthor {
+  margin-bottom: 20px;
+}
+.blogTitle {
+  margin-bottom: 20px;
+}
+.blogBody {
+  margin-bottom: 20px;
+}
+.formText {
+  color: rgb(158, 9, 9);
+  font-size: 28px;
+  position: relative;
+  right: 50%;
+  left: 30%;
+  
+  margin-bottom: 10px;
+}
+label {
+  color: rgb(158, 9, 9);
+}
+input,
+textarea,
+select {
+  width: 120%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+.add-Blog {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: rgb(173, 7, 7);
+  border: none;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
