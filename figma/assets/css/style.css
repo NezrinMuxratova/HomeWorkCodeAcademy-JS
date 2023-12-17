@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: whitesmoke;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+.ulElem{
+list-style: none;
+display: flex;
+margin: 0;
+gap:20px
+}
+.ulElem li a{
+    text-decoration: none;
+    color: black;
+}
+.fa-brands{
+   font-size: 26px;
+}
+.carusel{
+    height: 89vh;
+    background-image: url("../image/background9.jpg") ;
+    /* opacity: 0.3; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+strong{
+    font-weight: 400;
+  
+}
+.text{
+    font-size: 3rem;
+    width: 500px;
+}
+
+.caruselEm{
+    font-size: 2rem;
+    width: 600px;
+   display: block;
+
+}
+.carusel-left{
+line-height: 1.5;
+}
+.caruselOne-btn{
+    margin-top: 25px;
+    padding: 5px;
+    border: 1px solid red;
+    background-color: transparent;
+    width: 150px;
+    transition: all 0.5s;
+}
+.caruselOne-btn:hover{
+    background-color: red;
+    color: white;
+}
+.fa-solid.fa-bars{
+    display: none;
+}
+@media  screen and ( max-width:767px) {
+    .fa-solid.fa-bars{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+}
+
+.about-text{
+    text-align: center;
+}
+
+.card-one{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+    padding: 10px;
+}
+.fa-regular{
+    font-size: 4rem;
+    color: red;
+    margin: 20px;
+}
+.fa-solid{
+    font-size: 4rem;
+    color: red; 
+    margin: 20px;
+}
