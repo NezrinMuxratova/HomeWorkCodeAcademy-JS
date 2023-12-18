@@ -24,7 +24,8 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <scriptcdefer src="./assets/js/main.js"></scriptcdefer>
+    <script  defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./assets/js/main.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -57,7 +58,7 @@
                   <i class="fa-brands fa-instagram"></i>
                 </ul>
               </nav>
-              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-bars text-white"></i>
             </div>
           </div>
         </div>
@@ -65,80 +66,88 @@
     </header>
     <div class="carusel">
       <div id="carouselExample" class="carousel slide">
-        <div class="container">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div
-                class="d-flex justify-content-between align-items-center m-5"
-              >
-                <div class="carusel-left">
-                  <h5 class="text mbr-section-title mbr-fonts-style display-1">
-                    <strong>The view on refreshing</strong>
-                  </h5>
+        <div class="banner">
+          <div class="container">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="d-flex justify-content-between align-items-center m-5"
+                >
+                  <div class="carusel-left">
+                    <h5
+                      class="text mbr-section-title mbr-fonts-style display-1"
+                    >
+                      <strong>The view on refreshing</strong>
+                    </h5>
 
-                  <em class="caruselEm"
-                    >Phosfluorescently maintain impactful process.</em
-                  >
-                  <button class="caruselOne-btn">Read More</button>
-                </div>
-                <div class="carusel-right mt-5">
-                  <img
-                    src="./assets/image/image1.jpg"
-                    alt=""
-                    width="400px"
-                    height="400px"
-                    class="text-align-center"
-                  />
+                    <em class="caruselEm"
+                      >Phosfluorescently maintain impactful process.</em
+                    >
+                    <button class="caruselOne-btn">Read More</button>
+                  </div>
+                  <div class="carusel-right mt-5">
+                    <img
+                      src="./assets/image/image1.jpg"
+                      alt=""
+                      width="400px"
+                      height="400px"
+                      class="text-align-center"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item active">
-              <div
-                class="d-flex justify-content-between align-items-center m-5"
-              >
-                <div class="carusel-left">
-                  <h5 class="text mbr-section-title mbr-fonts-style display-1">
-                    <strong>THE FINE REFRESHING</strong>
-                  </h5>
+              <div class="carousel-item">
+                <div
+                  class="d-flex justify-content-between align-items-center m-5"
+                >
+                  <div class="carusel-left">
+                    <h5
+                      class="text mbr-section-title mbr-fonts-style display-1"
+                    >
+                      <strong>THE FINE REFRESHING</strong>
+                    </h5>
 
-                  <em class="caruselEm"
-                    >Phosfluorescently maintain impactful process</em
-                  >
-                  <button class="caruselOne-btn">Read More</button>
-                </div>
-                <div class="carusel-right mt-5">
-                  <img
-                    src="./assets/image/image3.jpg"
-                    alt=""
-                    width="400px"
-                    height="400px"
-                    class="text-align-center"
-                  />
+                    <em class="caruselEm"
+                      >Phosfluorescently maintain impactful process</em
+                    >
+                    <button class="caruselOne-btn">Read More</button>
+                  </div>
+                  <div class="carusel-right mt-5">
+                    <img
+                      src="./assets/image/image3.jpg"
+                      alt=""
+                      width="400px"
+                      height="400px"
+                      class="text-align-center"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item active">
-              <div
-                class="d-flex justify-content-between align-items-center m-5"
-              >
-                <div class="carusel-left">
-                  <h5 class="text mbr-section-title mbr-fonts-style display-1">
-                    <strong>TONLY EXQUISITE REFRESHING</strong>
-                  </h5>
+              <div class="carousel-item">
+                <div
+                  class="d-flex justify-content-between align-items-center m-5"
+                >
+                  <div class="carusel-left">
+                    <h5
+                      class="text mbr-section-title mbr-fonts-style display-1"
+                    >
+                      <strong>TONLY EXQUISITE REFRESHING</strong>
+                    </h5>
 
-                  <em class="caruselEm"
-                    >Phosfluorescently maintain impactful process.</em
-                  >
-                  <button class="caruselOne-btn">Read More</button>
-                </div>
-                <div class="carusel-right mt-5">
-                  <img
-                    src="./assets/image/image2.jpg"
-                    alt=""
-                    width="400px"
-                    height="400px"
-                    class="text-align-center"
-                  />
+                    <em class="caruselEm"
+                      >Phosfluorescently maintain impactful process.</em
+                    >
+                    <button class="caruselOne-btn">Read More</button>
+                  </div>
+                  <div class="carusel-right mt-5">
+                    <img
+                      src="./assets/image/image2.jpg"
+                      alt=""
+                      width="400px"
+                      height="400px"
+                      class="text-align-center"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -172,7 +181,7 @@
           <div class="card-one">
             <i class="fa-regular fa-heart"></i>
             <h5 class="card-title mbr-fonts-style">
-              <strong >FOR YOUR HAPPINESS</strong>
+              <strong>FOR YOUR HAPPINESS</strong>
               <p class="card-text mbr-fonts-style">
                 Magna at erat pretium mattis id non odio quisque nec tempor
                 sapien quis eget ligula ispsum sagittis.
@@ -203,9 +212,243 @@
       </div>
     </section>
 
-
     <section class="cosmeticts">
-      <h1>COSMETIC YOU CAN BE PROUD OF</h1>
+      <div class="container d-flex justify-content-between mt-5">
+        <div class="cosmeticts-left">
+          <h1>COSMETIC YOU CAN BE PROUD OF</h1>
+          <em class="opacity-75 mb-5">Only natural ingridients</em>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  security
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Quality
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the second item's accordion body. Let's imagine this being
+                  filled with some actual content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Vegan
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cosmeticts-right">
+          <img src="./assets/image/image3-800x800.jpg" alt="" width="400px" />
+        </div>
+      </div>
+    </section>
+
+    <section class="checklist mt-5">
+      <div class="container">
+        <div class="list">
+          <h1>8 THINGS YOU MUST KNOW ABOUT COSMETIC</h1>
+          <p class="opacity-75">GET CHECKLIST</p>
+        </div>
+      </div>
+    </section>
+    <section class="beautySection">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center m-5">
+          <div class="carusel-right mt-5">
+            <img
+              src="./assets/image/image1.jpg"
+              alt=""
+              width="400px"
+              height="400px"
+              class="text-align-center"
+            />
+          </div>
+          <div class="carusel-left mx-5">
+            <h5 class="text mbr-section-title mbr-fonts-style display-1">
+              <strong> DEVOTED TO WONDERFUL BEAUTY</strong>
+            </h5>
+
+            <em class="caruselEm">With 30-minute premium treat</em>
+            <p>
+              Phasellus faucibus vehicula rutrum in ante ligula vel arcu quis
+              lacinia posuere metus eget ligula ipsum maximus lobortis nec
+              imperdiet.
+            </p>
+            <button class="caruselOne-btn">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="special">
+      <div class="container">
+        <div class="special d-flex justify-content-between">
+          <div class="special-left">
+            <img src="./assets/image/image2.jpg" alt="" width="100%" />
+          </div>
+          <div class="special-right">
+            <div class="special-image">
+              <img src="./assets/image/image3 (1).jpg" alt="" width="150px" />
+            </div>
+            <h2 class="">SPECIAL OFFERS FOR YOU ONLY</h2>
+            <p class="opacity-75">GIT GIFTING</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ingridients">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center m-5">
+          <div class="carusel-left mx-5">
+            <h5 class="text mbr-section-title mbr-fonts-style display-1">
+              <strong> NOTHING ACTS FASTER THAN CARE</strong>
+            </h5>
+
+            <em>Only natural ingridients</em>
+            <p>
+              Phasellus faucibus vehicula rutrum in ante ligula vel arcu quis
+              lacinia posuere metus eget ligula ipsum maximus lobortis nec
+              imperdiet.
+            </p>
+            <button class="caruselOne-btn">Read More</button>
+          </div>
+          <div class="carusel-right mt-5 d-flex">
+            <div class="ingridients-image-1 mx-5">
+              <img
+                src="./assets/image/item1.jpg"
+                alt=""
+                width="200px"
+                class="text-align-center"
+              />
+              <div class="price">
+                <p>CARE CREAM</p>
+                <p>$65.00</p>
+              </div>
+            </div>
+            <div class="ingridients-image-1">
+              <img src="./assets/image/item2.jpg" alt="" width="200px" />
+              <div class="price">
+                <p>CARE CREAM</p>
+                <p>$65.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bestellers">
+      <div class="container">
+        <div class="bestellersH1">
+          <h1 class="bestellers-text">OUR BESTSELLERS</h1>
+        </div>
+        <div class="bestellers d-flex justify-content-between">
+          <div class="ingridients-image-1">
+            <img src="./assets/image/item1.jpg" alt="" width="350px" />
+            <div class="price">
+              <p>CARE CREAM</p>
+              <p>$65.00</p>
+            </div>
+          </div>
+          <div class="ingridients-image-1">
+            <img src="./assets/image/item2.jpg" alt="" width="350px" />
+            <div class="price">
+              <p>CARE CREAM</p>
+              <p>$65.00</p>
+            </div>
+          </div>
+          <div class="ingridients-image-1">
+            <img src="./assets/image/item3.jpg" alt="" width="350px" />
+            <div class="price">
+              <p>CARE CREAM</p>
+              <p>$65.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-products">
+      <div class="productsH1">
+        <div class="products-text">
+          <h1>OUR PRODUCTS</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="products-card">
+          <div class="products-image-1">
+            <img src="./assets/image/item3.jpg" alt="" width="350px" />
+            <div class="products-price">
+              <h5>CARE CREAM</h5>
+              <p>$65.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

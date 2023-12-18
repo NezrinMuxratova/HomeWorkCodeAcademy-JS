@@ -1,0 +1,40 @@
+{
+    "products":[
+     {
+    
+        "image":"https://mobirise.com/extensions/naturalm4/natural-cosmetic/assets/images/item1.jpg",
+        "title":"Care Cream",
+        "price":"$65.00"
+     },
+     {
+       
+        "image":"https://mobirise.com/extensions/naturalm4/natural-cosmetic/assets/images/item3.jpg",
+        "title":"RELIEF LOTION",
+        "price":"$60.00"
+     },
+     {
+       
+        "image":"https://mobirise.com/extensions/naturalm4/natural-cosmetic/assets/images/item1.jpg",
+        "title":"RELIEF LOTION",
+        "price":"$60.00"
+     },
+     {
+       
+        "image":"https://mobirise.com/extensions/naturalm4/natural-cosmetic/assets/images/item3.jpg",
+        "title":"BODY LOTION",
+        "price":"$80.00"
+     },
+     {
+      
+        "image":"https://mobirise.com/extensions/naturalm4/natural-cosmetic/assets/images/item1.jpg",
+        "title":"Care Cream",
+        "price":"$65.00"
+     },
+     {
+      
+        "image":"https://mobirise.com/extensions/naturalm4/natural-cosmetic/assets/images/item3.jpg",
+        "title":"RELIEF LOTION",
+        "price":"$60.00"
+     }
+    ]
+}

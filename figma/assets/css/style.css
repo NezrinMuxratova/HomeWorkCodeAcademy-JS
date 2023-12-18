@@ -1,103 +1,174 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-    background-color: whitesmoke;
+header {
+  background-color: whitesmoke;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
-.ulElem{
-list-style: none;
-display: flex;
-margin: 0;
-gap:20px
+.fa-bars {
+  color: white;
+  font-size: 10px;
 }
-.ulElem li a{
-    text-decoration: none;
-    color: black;
+.ulElem {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  gap: 20px;
 }
-.fa-brands{
-   font-size: 26px;
+.ulElem li a {
+  text-decoration: none;
+  color: black;
 }
-.carusel{
-    height: 89vh;
-    background-image: url("../image/background9.jpg") ;
-    /* opacity: 0.3; */
-    background-repeat: no-repeat;
-    background-size: cover;
+.fa-brands {
+  font-size: 26px;
 }
-strong{
-    font-weight: 400;
-  
+.carusel {
+  height: 89vh;
+  background-image: url("../image/background9.jpg");
+  /* opacity: 0.3; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.text{
-    font-size: 3rem;
-    width: 500px;
+.banner{
+    background-color: rgba(242,242,242,0.6);
+}
+strong {
+  font-weight: 400;
+}
+.text {
+  font-size: 3rem;
+  width: 500px;
 }
 
-.caruselEm{
-    font-size: 2rem;
-    width: 600px;
-   display: block;
-
+.caruselEm {
+  font-size: 2rem;
+  width: 600px;
+  display: block;
 }
-.carusel-left{
-line-height: 1.5;
+.carusel-left {
+  line-height: 1.5;
 }
-.caruselOne-btn{
-    margin-top: 25px;
-    padding: 5px;
-    border: 1px solid red;
-    background-color: transparent;
-    width: 150px;
-    transition: all 0.5s;
+.caruselOne-btn {
+  margin-top: 25px;
+  padding: 5px;
+  border: 1px solid red;
+  background-color: transparent;
+  width: 150px;
+  transition: all 0.5s;
 }
-.caruselOne-btn:hover{
-    background-color: red;
-    color: white;
+.caruselOne-btn:hover {
+  background-color: red;
+  color: white;
 }
-.fa-solid.fa-bars{
+.fa-solid.fa-bars {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .fa-solid.fa-bars {
+    display: block;
+  }
+  nav {
     display: none;
-}
-@media  screen and ( max-width:767px) {
-    .fa-solid.fa-bars{
-        display: block;
-    }
-    nav{
-        display: none;
-    }
+  }
 }
 
-.about-text{
-    text-align: center;
+.about-text {
+  text-align: center;
 }
 
-.card-one{
-    width: 400px;
-    height: 300px;
-    background-color: rgb(244, 244, 244);
+.card-one {
+  width: 350px;
+  height: 300px;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 2;
+  padding: 10px;
+}
+.fa-regular {
+  font-size: 4rem;
+  color: red;
+  margin: 20px;
+}
+.fa-solid {
+  font-size: 4rem;
+  color: red;
+  margin: 20px;
+}
+.cosmeticts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cosmeticts-left {
+  width: 300px;
+}
+.list {
+  background-color: rgb(192, 192, 192);
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.special{
+    background-color:rgb(228, 226, 226) ;
+}
+.special-left, .special-right{
+    width: 50%;
+}
+.special-right{
+    width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+.special-image{
     text-align: center;
-    line-height: 2;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.fa-regular{
-    font-size: 4rem;
-    color: red;
-    margin: 20px;
+.ingridients-image-1{
+    position: relative;
 }
-.fa-solid{
-    font-size: 4rem;
-    color: red; 
-    margin: 20px;
+.price{
+    width: 100%;
+    position: absolute;
+    bottom:20px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price p{
+    margin: 0;
+}
+.bestellersH1, .productsH1{
+    padding: 20px;
+}
+.bestellers-text , .products-text{
+    text-align: center;
+}
+.products-image-1{
+    position: relative;
+}
+.products-price{
+    position: absolute;
+    bottom:100px;
+    width: 100%;
+    left:100px
 }
