@@ -26,8 +26,8 @@ function drawCards(data) {
     const productPrice = document.createElement("p");
     productPrice.textContent = element.price;
 
-    productDivImage.append(productImage);
     productTitlePriceDiv.append(productTitle, productPrice);
-    productsCard.append(productTitlePriceDiv, productDivImage);
+    productDivImage.append(productImage, productTitlePriceDiv);
+    productsCard.append(productDivImage);
   });
 }
