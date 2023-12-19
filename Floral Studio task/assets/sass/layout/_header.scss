@@ -1,0 +1,37 @@
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba($color: $color-header, $alpha: 0.8);
+  position: absolute;
+  z-index: 1;
+  .header {
+    @include flexbox();
+    color: $color-white;
+  }
+  .header-right {
+    nav {
+      ul {
+        display: flex;
+        column-gap: 20px;
+        li a {
+          color: $color-white;
+          transition: all 0.5s;
+        }
+        :hover {
+          color: $color-hoverA;
+          border-bottom: 1px solid $color-hoverA;
+        }
+      }
+      @media screen and (max-width:767px){
+        display: none;
+      }
+    }
+    .fa-bars {
+      display: none;
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
+
+}

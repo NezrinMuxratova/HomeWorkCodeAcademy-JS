@@ -8,6 +8,7 @@ a{
   text-decoration: none;
   color:black
 }
+
 header {
   background-color: whitesmoke;
 }
@@ -17,9 +18,13 @@ header {
   align-items: center;
   padding: 10px;
 }
-.fa-bars {
-  color: white;
-  font-size: 10px;
+.fa-bars:before {
+  color:black;
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top:-15px
 }
 .ulElem {
   list-style: none;
@@ -31,8 +36,13 @@ header {
   text-decoration: none;
   color: black;
 }
+.ulElem li a:hover {
+
+ border-bottom: 1px solid black;
+}
 .ulElem li a.caruselOne-btn:hover{
   text-decoration:  1px solid;
+ 
 }
 .fa-brands {
   font-size: 26px;
@@ -83,7 +93,7 @@ strong {
   .fa-solid.fa-bars {
     display: block;
   }
-  nav {
+  nav{
     display: none;
   }
 }
@@ -187,6 +197,22 @@ strong {
   justify-content: center;
   align-items: center;
 }
+.loadMore{
+  padding: 10px 20px;
+  border-radius: 5px;
+margin: 20px;
+outline: none;
+border:1px solid  rgb(163, 221, 221);
+background-color: rgb(163, 221, 221);
+cursor: pointer;
+position: relative;
+left: 40%;
+}
+.loadMore:hover{
+ border:1px solid  rgb(163, 221, 221);
+ background-color: transparent;
+ color: rgb(163, 221, 221);
+}
 .products-price{
   position: absolute;
   bottom: 0;
@@ -262,4 +288,73 @@ border:none;
 }
 .footer-four h5{
 width: 180px;
+}
+
+@media  screen and (max-width:767px) {
+  .carusel-page{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .carusel-page .carusel-right  img{
+    width: 50%;
+    height: 50%;
+  }
+  .carusel-left{
+    width: 406px;
+    position: relative;
+  }
+  .carusel-left h5{
+    font-size: 25px;
+  }
+  .carusel-left em{
+    font-size: 25px;
+    width: 100%;
+  }
+  .about-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-one{
+   width: 100%;
+  }
+  .cosmetics-page{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cosmeticts-left{
+    width: 100%;
+  }
+  .cosmeticts-left h1{
+  font-size: 2rem;
+  }
+  .beautySectionPage{
+    flex-direction: column;
+  }
+  .special{
+    flex-direction: column;
+  }
+  .special-left{
+    width: 100%;
+  }
+  .ingridients{
+    flex-direction: column;
+  }
+  .bestellers img{
+   width: 60%;
+  
+  }
+  .bestellers .price {
+  font-size: 10px;
+  position: relative;
+  left: -36px;
+  top:-32px
+  
+  }
+  .contact{
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,142 @@
+#carouselExample {
+  .carousel-item {
+    height: 100vh;
+    background-size: cover;
+  }
+  .carousel-inner {
+    .carousel-item {
+      &.image1 {
+        background-image: url("../image/sl1-967x725.jpg") !important;
+      }
+      &.image2 {
+        background-image: url("../image/sl4.jpg") !important;
+      }
+      &.image3 {
+        background-image: url("../image/sl7.jpg") !important;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: $color-header;
+        line-height: 2;
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.local-florist {
+  margin-bottom: 70px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .local-florist-left {
+    width: 50%;
+    color: $color-header;
+
+    h1,
+    p {
+      font-family: Quicksand;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      size: 46px;
+      width: 300px;
+    }
+    em {
+      font-family: Crimson Text;
+    }
+  }
+  .local-florist-right {
+    position: relative;
+
+    .right-image2 {
+      position: absolute;
+      top: 60px;
+
+      right: 150px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.services {
+  // height: 100vh;
+
+  background-image: url("../image/background2.jpg");
+  .services-page-top {
+    text-align: center;
+    font-size: 2rem;
+    color: $color-header;
+    line-height: 2;
+    font-family: Quicksand;
+  }
+}
+.services-page-bottom{
+  height: 100vh;
+  .text{
+    color:$color-header;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .card{
+   padding-bottom: 40px;
+  }
+  
+}
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.38) !important;
+}
+span {
+    font-size: 70px;    
+    position: relative;
+    top: -5px;
+}
+.owl-nav button:focus {
+    outline: none;
+}

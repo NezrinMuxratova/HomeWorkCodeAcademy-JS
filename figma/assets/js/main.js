@@ -1,10 +1,14 @@
 const BASE_URL = `http://localhost:8000/products`;
 let productsCard = document.querySelector(".products-card");
-
+let loadMore = document.querySelector(".loadMore");
+let loadCard = [];
+let limit = 3;
 async function getData() {
   let response = await axios(`${BASE_URL}`);
   console.log(response.data);
   drawCards(response.data);
+  loadCard = response.data;
+  drawCards(response.data.slice(0, limit));
 }
 getData();
 
@@ -31,3 +35,10 @@ function drawCards(data) {
     productsCard.append(productDivImage);
   });
 }
+loadMore.addEventListener("click", function () {
+  limit += 3;
+  if (limit >= loadCard.length) {
+    this.remove()
+  }
+  drawCards(loadCard.slice(0,limit))
+});

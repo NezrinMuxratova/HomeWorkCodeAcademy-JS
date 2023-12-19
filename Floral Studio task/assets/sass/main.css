@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(37, 113, 93, 0.8);
+  position: absolute;
+  z-index: 1;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+}
+header .header-right nav ul {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+header .header-right nav ul li a {
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+header .header-right nav ul :hover {
+  color: #faba84;
+  border-bottom: 1px solid #faba84;
+}
+@media screen and (max-width: 767px) {
+  header .header-right nav {
+    display: none;
+  }
+}
+header .header-right .fa-bars {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  header .header-right .fa-bars {
+    display: block;
+  }
+}
+
+#carouselExample .carousel-item {
+  height: 100vh;
+  background-size: cover;
+}
+#carouselExample .carousel-inner .carousel-item.image1 {
+  background-image: url("../image/sl1-967x725.jpg") !important;
+}
+#carouselExample .carousel-inner .carousel-item.image2 {
+  background-image: url("../image/sl4.jpg") !important;
+}
+#carouselExample .carousel-inner .carousel-item.image3 {
+  background-image: url("../image/sl7.jpg") !important;
+}
+#carouselExample .carousel-inner .carousel-item .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #25715d;
+  line-height: 2;
+}
+#carouselExample .carousel-inner .carousel-item .contact p {
+  font-size: 2rem;
+}
+
+.local-florist {
+  margin-bottom: 70px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.local-florist .local-florist-left {
+  width: 50%;
+  color: #25715d;
+}
+.local-florist .local-florist-left h1,
+.local-florist .local-florist-left p {
+  font-family: Quicksand;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  size: 46px;
+  width: 300px;
+}
+.local-florist .local-florist-left em {
+  font-family: Crimson Text;
+}
+.local-florist .local-florist-right {
+  position: relative;
+}
+.local-florist .local-florist-right .right-image2 {
+  position: absolute;
+  top: 60px;
+  right: 150px;
+}
+@media screen and (max-width: 767px) {
+  .local-florist {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.services {
+  background-image: url("../image/background2.jpg");
+}
+.services .services-page-top {
+  text-align: center;
+  font-size: 2rem;
+  color: #25715d;
+  line-height: 2;
+  font-family: Quicksand;
+}
+
+.services-page-bottom {
+  height: 100vh;
+}
+.services-page-bottom .text {
+  color: #25715d;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.services-page-bottom .card {
+  padding-bottom: 40px;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-nav button.owl-prev {
+  left: 0;
+}
+
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+
+.owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.38) !important;
+}
+
+span {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+}
+
+.owl-nav button:focus {
+  outline: none;
+}/*# sourceMappingURL=main.css.map */
