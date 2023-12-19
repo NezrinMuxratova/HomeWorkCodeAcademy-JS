@@ -81,6 +81,22 @@ a {
   background-color: #d8e3d5;
 }
 
+.footer-btn {
+  padding: 15px 0;
+}
+
+.email {
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 1px solid #25715d;
+  width: 300px;
+  outline: none;
+}
+
+.footer-input {
+  background-color: transparent;
+}
+
 header {
   width: 100%;
   padding: 20px;
@@ -147,6 +163,10 @@ header .header-right .fa-bars {
   font-size: 2rem;
 }
 
+.local-page {
+  margin-bottom: 80px;
+}
+
 .local-florist {
   margin-bottom: 70px;
   margin-top: 50px;
@@ -157,6 +177,9 @@ header .header-right .fa-bars {
 .local-florist .local-florist-left {
   width: 50%;
   color: #25715d;
+}
+.local-florist .local-florist-left img {
+  width: 50%;
 }
 .local-florist .local-florist-left h1,
 .local-florist .local-florist-left p {
@@ -174,7 +197,7 @@ header .header-right .fa-bars {
 }
 .local-florist .local-florist-right .right-image2 {
   position: absolute;
-  top: 60px;
+  top: 50px;
   right: 150px;
 }
 @media screen and (max-width: 767px) {
@@ -390,4 +413,215 @@ span {
 #portfolio .shopCard {
   text-align: center;
   color: #25715d;
+}
+
+.flowers-pricing {
+  padding: 100px 0;
+}
+.flowers-pricing .flowers-pricing-page .flowers-pricing-top {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #25715d;
+  line-height: 2;
+}
+.flowers-pricing .flowers-pricing-page .flowers-pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.flowers-pricing .flowers-pricing-page .flowers-pricing-cards .pricing-card {
+  color: #25715d;
+  text-align: center;
+}
+.flowers-pricing .flowers-pricing-page .flowers-pricing-cards .pricing-card img {
+  width: 100%;
+}
+
+.events-page {
+  padding: 50px 0;
+}
+.events-page .events-page-top {
+  line-height: 2;
+  text-align: center;
+  color: #25715d;
+}
+.events-page .events-page-cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: #25715d;
+  background-color: #fef1e6;
+}
+@media screen and (max-width: 767px) {
+  .events-page .events-page-cards {
+    display: block;
+    row-gap: 10px;
+    width: 100%;
+  }
+}
+.events-page .events-page-cards .event-card {
+  padding: 20px 0;
+  line-height: 2;
+  border: 1px solid #25715d;
+  width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .events-page .events-page-cards .event-card {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.events-page .events-page-cards .event-card div {
+  justify-content: center;
+}
+
+.team-page-top {
+  padding: 20px 0;
+  text-align: center;
+  color: #25715d;
+  line-height: 2;
+}
+.team-page-top .icons-card {
+  position: relative;
+  width: 100%;
+}
+.team-page-top .icons-card:hover .team-icons {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.team-page-top .icons-card:hover .team-icons i {
+  background-color: #FFFFFF;
+  padding: 5px;
+  margin-bottom: 2px;
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+.team-icons {
+  display: none;
+}
+
+.makers-flora {
+  padding: 50px 30px;
+  color: #25715d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.makers-flora .makers-flora-left {
+  width: 50%;
+}
+.makers-flora .makers-flora-left img {
+  width: 80%;
+}
+.makers-flora .makers-flora-right {
+  width: 50%;
+}
+
+#clients {
+  background-color: #d8e3d5;
+  padding-bottom: 60px;
+}
+#clients .clients .clients-top {
+  text-align: center;
+  color: #25715d;
+  padding: 20px 0;
+}
+#clients .clients-right {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+}
+#clients .clients-right img {
+  width: 10%;
+}
+
+.find-page {
+  margin-top: 20px;
+  color: #25715d;
+  text-align: center;
+}
+.find-page .find-text {
+  margin-bottom: 50px;
+}
+.find-page .find-page-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .find-page .find-page-bottom {
+    display: block;
+  }
+}
+.find-page .find-page-bottom .find-card {
+  width: 30%;
+  line-height: 2;
+  background-color: #d8e3d5;
+}
+@media screen and (max-width: 767px) {
+  .find-page .find-page-bottom .find-card {
+    width: 100%;
+  }
+}
+.find-page .find-page-bottom .two {
+  background-color: #fffbf6;
+}
+.find-page .find-page-bottom .three {
+  background-color: #fef1e6;
+}
+
+.sub-pages {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-page {
+  text-align: center;
+  color: #25715d;
+  width: 500px;
+  line-height: 2;
+}
+
+footer {
+  background-color: #e0ecdc;
+  padding: 50px 0;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #25715d;
+}
+@media screen and (max-width: 767px) {
+  footer .footer {
+    flex-direction: column;
+  }
+}
+footer .footer .footer-left img {
+  margin-bottom: 20px;
+  width: 10%;
+  position: relative;
+  left: 120px;
+}
+footer .footer .footer-right {
+  line-height: 2;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+footer .footer .footer-right nav ul li:hover {
+  border-bottom: 1px solid #25715d;
 }/*# sourceMappingURL=main.css.map */

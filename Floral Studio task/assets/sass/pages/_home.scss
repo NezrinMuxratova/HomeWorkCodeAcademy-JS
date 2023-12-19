@@ -30,6 +30,9 @@
   }
 }
 
+.local-page {
+  margin-bottom: 80px;
+}
 .local-florist {
   margin-bottom: 70px;
   margin-top: 50px;
@@ -40,7 +43,9 @@
   .local-florist-left {
     width: 50%;
     color: $color-header;
-
+    img {
+      width: 50%;
+    }
     h1,
     p {
       font-family: Quicksand;
@@ -58,7 +63,7 @@
 
     .right-image2 {
       position: absolute;
-      top: 60px;
+      top: 50px;
 
       right: 150px;
     }
@@ -251,8 +256,187 @@ span {
       }
     }
   }
-  .shopCard{
+  .shopCard {
     text-align: center;
-    color:$color-header;
+    color: $color-header;
   }
+}
+
+.flowers-pricing {
+  padding: 100px 0;
+  .flowers-pricing-page {
+    .flowers-pricing-top {
+      margin-bottom: 50px;
+      text-align: center;
+      color: $color-header;
+      line-height: 2;
+    }
+    .flowers-pricing-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      .pricing-card {
+        color: $color-header;
+        text-align: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.events-page {
+  padding: 50px 0;
+  .events-page-top {
+    line-height: 2;
+    text-align: center;
+    color: $color-header;
+    // margin-bottom: 20px;
+  }
+  .events-page-cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: $color-header;
+    background-color: $color-card-bg;
+    @media screen and (max-width: 767px) {
+      display: block;
+      row-gap: 10px;
+      width: 100%;
+    }
+    .event-card {
+      padding: 20px 0;
+      line-height: 2;
+      border: 1px solid $color-header;
+      width: 30%;
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      div {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.team-page-top {
+  padding: 20px 0;
+  text-align: center;
+  color: $color-header;
+  line-height: 2;
+
+  .icons-card {
+    position: relative;
+    width: 100%;
+    &:hover {
+      .team-icons {
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        i {
+          background-color: $color-white;
+          padding: 5px;
+          margin-bottom: 2px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+img {
+  width: 100%;
+}
+.team-icons {
+  display: none;
+}
+
+.makers-flora {
+  padding: 50px 30px;
+  color: $color-header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .makers-flora-left {
+    width: 50%;
+    img {
+      width: 80%;
+    }
+  }
+  .makers-flora-right {
+    width: 50%;
+  }
+}
+#clients {
+  background-color: $color-btn;
+  padding-bottom: 60px;
+
+  .clients .clients-top {
+    text-align: center;
+    color: $color-header;
+    padding: 20px 0;
+  }
+  .clients-right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+
+    img {
+      width: 10%;
+    }
+  }
+}
+
+.find-page {
+  margin-top: 20px;
+  color: $color-header;
+  .find-text {
+    margin-bottom: 50px;
+  }
+
+  text-align: center;
+  .find-page-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+
+    .find-card {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      width: 30%;
+      line-height: 2;
+      background-color: #d8e3d5;
+    }
+    .two {
+      background-color: #fffbf6;
+    }
+    .three {
+      background-color: #fef1e6;
+    }
+  }
+}
+
+.sub-pages {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-page {
+  text-align: center;
+  color: $color-header;
+  width: 500px;
+  line-height: 2;
 }

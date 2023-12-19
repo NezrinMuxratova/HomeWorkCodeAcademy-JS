@@ -13,26 +13,43 @@
     />
 
     <link
+      type="text/css"
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
+      type="text/css"
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    ></script>
+    <script
+      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="owlcarousel/owl.carousel.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/owl.theme.default.min.css"
+      type="text/css"
+    />
+    <script defer src="jquery.min.js"></script>
+    <script defer src="owlcarousel/owl.carousel.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -47,11 +64,17 @@
       referrerpolicy="no-referrer"
     />
     <script
+      defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/sass/main.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script defer src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/sass/main.css" type="text/css" />
     <title>Sammy’s First Website</title>
     <!-- <link rel="icon" type="image/jpg" href="" /> -->
   </head>
@@ -122,7 +145,7 @@
     </div>
 
     <!-- Local Florist Just For You -->
-    <section>
+    <section class="local-page">
       <div class="container">
         <div class="local-florist">
           <div class="local-florist-left">
@@ -322,7 +345,319 @@
           </div>
         </div>
       </div>
+      <!-- Flowers Pricing -->
+      <section class="flowers-pricing">
+        <div class="container">
+          <div class="flowers-pricing-page">
+            <div class="flowers-pricing-top">
+              <em>Devoted to wonderful beauty</em>
+              <p class="fs-1">Flowers Pricing</p>
+            </div>
+            <div class="flowers-pricing-cards">
+              <!-- <div class="pricing-card">
+                <div class="pricing-image">
+                  <img src="./assets/image/b2.jpg" alt="" />
+                </div>
+                <p>Dahlia</p>
+                <p>$45</p>
+              </div> -->
+            </div>
+            <button class="read-more-btn load">Load more</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- events-pricing -->
+      <section class="">
+        <div class="container">
+          <div class="events-page">
+            <div class="events-page-top mb-5">
+              <em>Devoted to wonderful beauty</em>
+              <p class="fs-1">Events Pricing</p>
+            </div>
+            <div class="events-page-cards">
+              <div class="event-card one">
+                <div class="d-flex align-items-end">
+                  <p class="fs-1">$16</p>
+                  <p>per table</p>
+                </div>
+                <p>Birthday Events</p>
+                <p class="lorem-text">
+                  Lorem ipsum dolor sit amet laudem partem perfecto per
+                </p>
+                <button class="read-more-btn">Shop now</button>
+              </div>
+              <div class="event-card one">
+                <div class="d-flex align-items-end">
+                  <p class="fs-1">$31</p>
+                  <p>per table</p>
+                </div>
+                <p>Wedding Events</p>
+                <p class="lorem-text">
+                  Lorem ipsum dolor sit amet laudem partem perfecto per
+                </p>
+                <button class="read-more-btn">Shop now</button>
+              </div>
+              <div class="event-card one">
+                <div class="d-flex align-items-end">
+                  <p class="fs-1">$52</p>
+                  <p>per table</p>
+                </div>
+                <p>Party Events</p>
+                <p class="lorem-text">
+                  Lorem ipsum dolor sit amet laudem partem perfecto per
+                </p>
+                <button class="read-more-btn">Shop now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-    <script src="./assets/js/main.js"></script>
+
+    <!-- Our Team -->
+
+    <section>
+      <div class="container">
+        <div class="team-page">
+          <div class="team-page-top">
+            <em>Contacts</em>
+            <p class="fs-1">Our Team</p>
+            <div class="team-page-cards d-flex justify-content-center">
+              <div class="team-cards">
+                <div class="team-cards-images">
+                  <div class="icons-card">
+                    <img src="./assets/image/portr1.jpg" alt="" />
+
+                    <div class="team-icons">
+                      <i class="fa-brands fa-facebook-f d-block"></i>
+                      <i class="fa-brands fa-twitter d-block"></i>
+                      <i class="fa-brands fa-instagram d-block"></i>
+                    </div>
+                  </div>
+                  <p>Velva Kopf</p>
+                  <em>Biologist </em>
+                </div>
+              </div>
+              <div class="team-cards">
+                <div class="team-cards-images">
+                  <div class="icons-card">
+                    <img src="./assets/image/portr2.jpg" alt="" />
+
+                    <div class="team-icons">
+                      <i class="fa-brands fa-facebook-f d-block"></i>
+                      <i class="fa-brands fa-twitter d-block"></i>
+                      <i class="fa-brands fa-instagram d-block"></i>
+                    </div>
+                  </div>
+                  <p>Velva Kopf</p>
+                  <em>Biologist </em>
+                </div>
+              </div>
+              <div class="team-cards">
+                <div class="team-cards-images">
+                  <div class="icons-card">
+                    <img src="./assets/image/portr3.jpg" alt="" />
+
+                    <div class="team-icons">
+                      <i class="fa-brands fa-facebook-f d-block"></i>
+                      <i class="fa-brands fa-twitter d-block"></i>
+                      <i class="fa-brands fa-instagram d-block"></i>
+                    </div>
+                  </div>
+                  <p>Velva Kopf</p>
+                  <em>Biologist </em>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The fine makers of flora -->
+
+    <section>
+      <div class="container">
+        <div class="makers-flora">
+          <div class="makers-flora-left">
+            <p class="fs-1">The fine makers of flora</p>
+            <img src="./image/signature.png" alt="" />
+          </div>
+          <div class="makers-flora-right">
+            <p>
+              Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem
+              fierent ullamcorper ius no, nec ea quodsi invenire. Pri facilisi
+              eleifend ad, ad eos scripta oblique. Vix cu oratio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our clients -->
+
+    <section id="clients">
+      <div class="container">
+        <div class="clients">
+          <div class="clients-top">
+            <p class="fs-1">Our clients</p>
+          </div>
+          <div class="clients-right">
+            <img src="./assets/image/1.png" alt="" />
+            <img src="./assets/image/3.png" alt="" />
+            <img src="./assets/image/4.png" alt="" />
+            <img src="./assets/image/5.png" alt="" />
+            <img src="./assets/image/6.png" alt="" />
+            <img src="./assets/image/4.png" alt="" />
+            <img src="./assets/image/3.png" alt="" />
+            <img src="./assets/image/6.png" alt="" />
+            <img src="./assets/image/5.png" alt="" />
+            <img src="./assets/image/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where to find -->
+    <section>
+      <div class="container">
+        <div class="find-page-top">
+          <div class="find-page">
+            <em>Contacts</em>
+            <p class="fs-1 find-text">Where to find</p>
+            <div class="find-page-bottom">
+              <div class="find-card one">
+                <div class="find-h1">
+                  <p class="fs-3">Toronto</p>
+                </div>
+                <div class="find-text">
+                  <div class="find-text-one">
+                    <em>Say hello</em>
+                    <p>email@site.com</p>
+                  </div>
+                  <div class="find-text-one">
+                    <em>Phone</em>
+                    <p>+369 35 353562 3544</p>
+                  </div>
+                  <div class="find-text-one">
+                    <em>Address</em>
+                    <p>4th Avenue 4856, New York</p>
+                  </div>
+                </div>
+              </div>
+              <div class="find-card two">
+                <div class="find-h1">
+                  <p class="fs-3">Paris</p>
+                </div>
+                <div class="find-text">
+                  <div class="find-text-one">
+                    <em>Say hello</em>
+                    <p>email@site.com</p>
+                  </div>
+                  <div class="find-text-one">
+                    <em>Phone</em>
+                    <p>+369 35 353562 3544</p>
+                  </div>
+                  <div class="find-text-one">
+                    <em>Address</em>
+                    <p>4th Avenue 4856, New York</p>
+                  </div>
+                </div>
+              </div>
+              <div class="find-card three">
+                <div class="find-h1">
+                  <p class="fs-3">Barcelona</p>
+                </div>
+                <div class="find-text">
+                  <div class="find-text-one">
+                    <em>Say hello</em>
+                    <p>email@site.com</p>
+                  </div>
+                  <div class="find-text-one">
+                    <em>Phone</em>
+                    <p>+369 35 353562 3544</p>
+                  </div>
+                  <div class="find-text-one">
+                    <em>Address</em>
+                    <p>4th Avenue 4856, New York</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- finally-section -->
+    <section >
+      <div class="container">
+    <div class="sub-pages">
+
+      <div class="subscribe-page">
+        <div class="page-one">
+          <i class="fa-regular fa-heart fs-1"></i>
+        </div>
+        <p class="fs-2">Subscribe to Us</p>
+        <div class="sub-p">
+
+          <p class="sub-text">
+            Interactively utilize leveraged interfaces vis-a-vis state of the
+            art human capital. Interactively parallel task focused content via
+            low-risk high-yield internal or "organic" sources.
+          </p>
+        </div>
+        <input type="email" placeholder="Your Email" class="email">
+        <button class="read-more-btn">Send</button>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-left">
+            <img src="./assets/image/signature.png" alt="">
+            <input type="email" placeholder="Your Email" class=" footer-input email">
+            <button class="read-more-btn footer-btn">Send</button>
+          </div>
+          <div class="footer-right">
+            <div class="footer-left-one">
+              <nav>
+                <li>About </li>
+                <ul>
+                  <li><a href="#"></a><em>About us</em></li>
+                  <li><a href="#"></a><em>Our Partners</em></li>
+                  <li><a href="#"></a><em>Our Services</em></li>
+              
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-left-two">
+              <nav>
+                <li>Contact </li>
+                <ul>
+                  <li><a href="#"></a><em>Contact us</em></li>
+                  <li><a href="#"></a><em>FAQ Page</em></li>
+                  <li><a href="#"></a><em>About Me </em></li>
+              
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-left-three">
+              <nav>
+                <li>Follow Us</li>
+                <ul>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
