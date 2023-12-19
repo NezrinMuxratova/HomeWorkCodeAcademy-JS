@@ -3,9 +3,9 @@
     justify-content: $a;
     align-items: $b;
 }
-@mixin cardBox ($c:center, $d:center ){
+@mixin cardBox ($c:center){
     display: flex;
     flex-direction: column;
     justify-content: $c;
-    align-items: $d;
+   
 }

@@ -80,18 +80,17 @@
     font-family: Quicksand;
   }
 }
-.services-page-bottom{
+.services-page-bottom {
   height: 100vh;
-  .text{
-    color:$color-header;
+  .text {
+    color: $color-header;
     text-align: center;
     font-size: 1.5rem;
     padding: 10px;
   }
-  .card{
-   padding-bottom: 40px;
+  .card {
+    padding-bottom: 40px;
   }
-  
 }
 .owl-nav button {
   position: absolute;
@@ -127,16 +126,133 @@
   outline: none;
 }
 .owl-nav button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.38) !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.38) !important;
 }
 span {
-    font-size: 70px;    
-    position: relative;
-    top: -5px;
+  font-size: 70px;
+  position: relative;
+  top: -5px;
 }
 .owl-nav button:focus {
-    outline: none;
+  outline: none;
+}
+
+.mission {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+  .mission-left {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    background-color: $color-header;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    .mission-left-text {
+      padding-left: 60px;
+    }
+  }
+  .mission-right {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.icons-section {
+  padding: 60px 0;
+
+  .icons-page {
+    @media screen and (max-width: 767px) {
+      display: block;
+      width: 100%;
+    }
+    @include flexbox();
+    .card-icon {
+      width: 20%;
+      color: $color-header;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      .image-icon {
+        display: flex;
+        gap: 10px;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.sale-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: $color-white;
+  margin-top: 50px;
+  height: 15vh;
+  background-image: url("../image/sl3-1050x700.jpg");
+  .percentage {
+    font-size: 2rem;
+    margin-left: 10%;
+  }
+  .weekly-text {
+    margin-left: 10%;
+  }
+}
+.color-teal {
+  background-color: $color-btn;
+  height: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#portfolio {
+  margin-top: 50px;
+  background-image: url("../image/background1-1-1085x595.jpg");
+  .portfolio {
+    .portfolio-top {
+      padding: 20px;
+      text-align: center;
+      color: $color-header;
+      line-height: 1.5;
+    }
+    .portfolio-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      .portfolio-card {
+        &.text {
+          background-image: url("../image/gallery1.jpg");
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        display: flex;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .shopCard{
+    text-align: center;
+    color:$color-header;
+  }
 }
