@@ -20,11 +20,11 @@ header {
           li a {
             color: $color-white;
             transition: all 0.5s;
-            border-bottom: none;
-          }
-          &:hover {
-            color: $color-hoverA;
-            border-bottom: 1px solid $color-hoverA;
+          
+            &:hover {
+              color: $color-hoverA;
+              border-bottom: 1px solid $color-hoverA;
+            }
           }
         }
         @media screen and (max-width: 767px) {

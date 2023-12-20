@@ -139,12 +139,14 @@ header .header .header-right nav ul {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+header .header .header-right nav ul li {
+  border: none;
+}
 header .header .header-right nav ul li a {
   color: #FFFFFF;
   transition: all 0.5s;
-  border-bottom: none;
 }
-header .header .header-right nav ul :hover {
+header .header .header-right nav ul li a:hover {
   color: #faba84;
   border-bottom: 1px solid #faba84;
 }
@@ -659,6 +661,10 @@ img {
   margin-left: 30px;
 }
 
+table th {
+  color: #25715d;
+}
+
 tbody {
   text-align: center;
 }
@@ -705,4 +711,9 @@ footer .footer .footer-right {
        column-gap: 20px;
 }
 footer .footer .footer-right nav ul li:hover {
+  border-bottom: 1px solid #25715d;
 }/*# sourceMappingURL=main.css.map */
+
+table th{
+  color:#25715d;
+}

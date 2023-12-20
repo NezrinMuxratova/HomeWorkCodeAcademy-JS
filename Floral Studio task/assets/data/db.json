@@ -37,10 +37,10 @@
       "id": 16
     },
     {
-      "images": "./assets/image/b3.jpg",
-      "name": "11111111111111111",
-      "price": "45",
-      "id": 18
+      "images": "./assets/image/b4.jpg",
+      "name": "123",
+      "price": "123",
+      "id": 17
     }
   ]
 }

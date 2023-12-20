@@ -464,7 +464,11 @@ img {
     }
   }
 }
-
+table{
+  th{
+    color:$color-header;
+  }
+}
 tbody {
   text-align: center;
 

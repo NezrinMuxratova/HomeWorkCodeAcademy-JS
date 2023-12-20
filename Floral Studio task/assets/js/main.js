@@ -26,8 +26,10 @@ let sort = document.querySelector(".sort");
 let menuIcon = document.querySelector("#menu");
 let nav = document.querySelector(".h-nav");
 let favCount = document.querySelector(".fav-count");
+
 let favorites = getFavoritesFromLocaleStorages();
 calculateFavCount(favorites.length);
+
 let loadCard = [];
 let limit = 3;
 let products = null;

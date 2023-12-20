@@ -1,11 +1,12 @@
 
 const BASE_URL = " http://localhost:2000/products";
 let flowersCard = document.querySelector(".flowers-pricing-cards");
-
 let favCount = document.querySelector(".fav-count");
+
+
 let favorites = getFavoritesFromLocaleStorages();
 calculateFavCount(favorites.length);
-
+drawFlowers(favorites)
 
 function drawFlowers(data) {
     flowersCard.innerHTML = "";
@@ -31,28 +32,16 @@ function drawFlowers(data) {
   
       // FAVORITES
       const favIconElement = document.createElement("i");
-  
-      const bool = favorites.find((item) => item.id === element.id);
-  
-      favIconElement.className = !bool
-        ? "fa-regular fa-heart"
-        : "fa-solid fa-heart";
+      favIconElement.className = "fa-solid fa-heart";
+    
+ 
   
       favIconElement.addEventListener("click", function () {
-        this.className === "fa-regular fa-heart"
-          ? (this.className = "fa-solid fa-heart")
-          : (this.className = "fa-regular fa-heart");
-          let favoriteProducts = getFavoritesFromLocaleStorages();
-  
-        const favIndex = favoriteProducts.findIndex(
-          (item) => item.id === element.id
-        );
-  
-        if (favIndex === -1) {
-          favoriteProducts.push(element);
-        } else {
-          favoriteProducts.splice(favIndex, 1);
-        }
+        favorites = favorites.filter((item) => item.id !== element.id);
+        setProductToLocaleStorage(favorites);
+        pricingCardDiv.remove();
+        let favoriteProducts = getFavoritesFromLocaleStorages();
+
   
         setProductToLocaleStorage(favoriteProducts);
         calculateFavCount(favoriteProducts.length);
@@ -71,4 +60,8 @@ function drawFlowers(data) {
   
   function getFavoritesFromLocaleStorages() {
     return JSON.parse(localStorage.getItem("favs")) ?? [];
+  }
+  
+  function calculateFavCount(count) {
+    favCount.textContent = count;
   }
