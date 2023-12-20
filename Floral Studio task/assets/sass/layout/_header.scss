@@ -4,6 +4,7 @@ header {
   background-color: rgba($color: $color-header, $alpha: 0.8);
   position: absolute;
   z-index: 12;
+  position: fixed;
   .header {
   
     @include flexbox();
