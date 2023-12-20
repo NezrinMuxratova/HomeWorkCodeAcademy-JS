@@ -1,4 +1,3 @@
-
 $(".owl-carousel").owlCarousel({
   autoplay: true,
   rewind: true,
@@ -19,62 +18,58 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-
-const BASE_URL=" http://localhost:2000/products"
-let flowersCard=document.querySelector(".flowers-pricing-cards")
-let loadMoreBtn=document.querySelector(".load")
-let search=document.querySelector(".search")
+const BASE_URL = " http://localhost:2000/products";
+let flowersCard = document.querySelector(".flowers-pricing-cards");
+let loadMoreBtn = document.querySelector(".load");
+let search = document.querySelector(".search");
 let sort = document.querySelector(".sort");
-let menuIcon=document.querySelector("#menu")
-let nav=document.querySelector(".h-nav")
+let menuIcon = document.querySelector("#menu");
+let nav = document.querySelector(".h-nav");
 let loadCard = [];
 let limit = 3;
-let products=null;
+let products = null;
 let productsCopy = null;
 
-
-async function getData(){
-  let response = await axios(`${BASE_URL}`)
-  products=response.data;
-  productsCopy = structuredClone(products);;
+async function getData() {
+  let response = await axios(`${BASE_URL}`);
+  products = response.data;
+  productsCopy = structuredClone(products);
   console.log(response.data);
   loadCard = response.data;
-  drawFlowers(response.data)
-  drawFlowers(response.data.slice(0,limit))
+  drawFlowers(response.data);
+  drawFlowers(response.data.slice(0, limit));
 }
-getData()
-function drawFlowers(data){
-  flowersCard.innerHTML=""
-  data.forEach(element => {
-  const pricingCardDiv=document.createElement("div")
-  pricingCardDiv.className="pricing-card"
-  const pricingImageDiv=document.createElement("div")
-   pricingImageDiv.className="pricing-image"
-  const pricingImage=document.createElement("img")
-pricingImage.src=element.images
-  const pricingName=document.createElement("p")
-pricingName.textContent=element.name
-  const pricingPrice=document.createElement("p")
-pricingPrice.textContent=element.price
-const readMore=document.createElement("a")
-readMore.href="./details.html?=element.id"
-readMore.innerText="Read More"
-
-
-pricingImageDiv.append(pricingImage)
-pricingCardDiv.append(pricingImageDiv,readMore,pricingName,pricingPrice)
-flowersCard.append(pricingCardDiv)
+getData();
+function drawFlowers(data) {
+  flowersCard.innerHTML = "";
+  data.forEach((element) => {
+    const pricingCardDiv = document.createElement("div");
+    pricingCardDiv.className = "pricing-card";
+    const pricingImageDiv = document.createElement("div");
+    pricingImageDiv.className = "pricing-image";
+    const pricingImage = document.createElement("img");
+    pricingImage.src = element.images;
+    const pricingName = document.createElement("p");
+    pricingName.textContent = element.name;
+    const pricingPrice = document.createElement("p");
+    pricingPrice.textContent = `${element.price}`;
+    const readMore = document.createElement("a");
+    readMore.href = `details.html?id=${element.id}`;
+    readMore.innerText = "Read More";
+    
+    pricingImageDiv.append(pricingImage);
+    pricingCardDiv.append(pricingImageDiv, readMore, pricingName, pricingPrice);
+    flowersCard.append(pricingCardDiv);
   });
 }
 
-loadMoreBtn.addEventListener("click", function(){
-  limit+=3
+loadMoreBtn.addEventListener("click", function () {
+  limit += 3;
   if (limit >= loadCard.length) {
-    this.remove()
+    this.remove();
   }
-drawFlowers(loadCard.slice(0,limit))
-})
-
+  drawFlowers(loadCard.slice(0, limit));
+});
 
 search.addEventListener("input", function (element) {
   let filtered = products.filter((item) => {
@@ -89,10 +84,8 @@ search.addEventListener("input", function (element) {
 sort.addEventListener("click", function () {
   let sorted;
   if (this.innerText == "Ascending") {
-    sorted = products.sort(
-      (a, b) => a.name.localeCompare(b.name)
-      );
-      this.innerText = "Descending"
+    sorted = products.sort((a, b) => a.name.localeCompare(b.name));
+    this.innerText = "Descending";
   } else if (this.innerText == "Descending") {
     sorted = products.sort((a, b) => b.name.localeCompare(a.name));
     this.innerText = "Default";
@@ -100,7 +93,7 @@ sort.addEventListener("click", function () {
     this.innerText = "Ascending";
     sorted = productsCopy;
   }
-  drawFlowers(sorted)
+  drawFlowers(sorted);
 });
 
 menuIcon.addEventListener("click", function () {

@@ -117,7 +117,7 @@ header {
   padding: 20px;
   background-color: rgba(37, 113, 93, 0.8);
   position: absolute;
-  z-index: 1;
+  z-index: 12;
 }
 header .header {
   display: flex;
@@ -125,49 +125,49 @@ header .header {
   align-items: center;
   color: #FFFFFF;
 }
-header .header-right nav ul {
+header .header .header-right nav ul {
   display: flex;
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-header .header-right nav ul li a {
+header .header .header-right nav ul li a {
   color: #FFFFFF;
   transition: all 0.5s;
 }
-header .header-right nav ul :hover {
+header .header .header-right nav ul :hover {
   color: #faba84;
   border-bottom: 1px solid #faba84;
 }
 @media screen and (max-width: 767px) {
-  header .header-right nav {
+  header .header .header-right nav {
     display: none;
   }
 }
-header .header-right .fa-bars {
+header .header .header-right .fa-bars {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  header .header nav {
+  header .header .header-right nav {
+    position: absolute;
     display: none;
-    position: fixed;
     width: 100%;
-    top: 40px;
+    top: 50px;
     left: 0;
     background-color: #25715d;
   }
-  header .header nav ul {
+  header .header .header-right nav ul {
     flex-direction: column;
     height: 25vh;
     align-items: center;
     justify-content: center;
   }
-  header .header nav.show {
+  header .header .header-right nav.show {
     display: block;
   }
-  header .header .fa-bars {
+  header .header .header-right .fa-bars {
     display: block;
   }
-  header .header .fa-xmark {
+  header .header .header-right .fa-xmark {
     cursor: pointer;
   }
 }
@@ -632,6 +632,21 @@ img {
   color: #25715d;
   width: 500px;
   line-height: 2;
+}
+
+#details .details .card-body {
+  color: #25715d;
+  height: 100vh;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#details .details .card-body img {
+  width: 50%;
+}
+#details .details .card-body .det-text {
+  margin-left: 30px;
 }
 
 footer {

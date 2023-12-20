@@ -446,3 +446,23 @@ img {
   line-height: 2;
 }
 
+#details{
+  .details{
+    .card-body{
+      color:$color-header;
+      height: 100vh;
+      border:none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 50%;
+      }
+      .det-text{
+   margin-left: 30px;
+
+ }
+ 
+  }
+  }
+}

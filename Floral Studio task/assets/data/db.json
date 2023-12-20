@@ -4,37 +4,37 @@
       "id":1,
       "images": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b4.jpg",
       "name":"Dahlia",
-      "price":"$45"
+      "price":45
     },
     {
       "id":2,
       "images": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b2.jpg",
       "name":"Mazus",
-      "price":"$45"
+      "price":45
     },
     {
       "id":3,
       "images": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b3.jpg",
       "name":"Pansies",
-      "price":"$45"
+      "price":45
     },
     {
       "id":4,
         "images": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b4.jpg",
         "name":"Dahlia",
-        "price":"$45"
+        "price":45
       },
       {
         "id":5,
         "images": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b2.jpg",
         "name":"Mazus",
-        "price":"$45"
+        "price":45
       },
       {
         "id":6,
         "images": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b3.jpg",
         "name":"Pansies",
-        "price":"$45"
+        "price":45
       }
   ]
 }

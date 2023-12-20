@@ -3,61 +3,64 @@ header {
   padding: 20px;
   background-color: rgba($color: $color-header, $alpha: 0.8);
   position: absolute;
-  z-index: 1;
+  z-index: 12;
   .header {
+  
     @include flexbox();
     color: $color-white;
-  }
-  .header-right {
-    nav {
-      ul {
-        display: flex;
-        column-gap: 20px;
-        li a {
-          color: $color-white;
-          transition: all 0.5s;
-        }
-        :hover {
-          color: $color-hoverA;
-          border-bottom: 1px solid $color-hoverA;
-        }
-      }
-      @media screen and (max-width:767px){
-        display: none;
-      }
-    }
-    .fa-bars {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-   
-    .header {
-      nav {
-        display: none;
-        position: fixed;
-        width: 100%;
-        top: 40px;
-        left: 0;
 
-        background-color:$color-header;
+    .header-right {
+      nav {
         ul {
-          flex-direction: column;
-          height: 25vh;
-          align-items: center;
-          justify-content: center;
+          display: flex;
+          column-gap: 20px;
+          li a {
+            color: $color-white;
+            transition: all 0.5s;
+          }
+          :hover {
+            color: $color-hoverA;
+            border-bottom: 1px solid $color-hoverA;
+          }
         }
-      }
-      nav.show {
-        display: block;
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
       }
       .fa-bars {
-        display: block;
-
+        display: none;
       }
-      .fa-xmark {
-        cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .header {
+      .header-right {
+        nav {
+           position: absolute;
+          display: none;
+          width: 100%;
+          top: 50px;
+          left: 0;
+          
+          background-color: $color-header;
+          ul {
+            flex-direction: column;
+            height: 25vh;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        nav.show {
+          display: block;
+        
+        }
+        .fa-bars {
+          display: block;
+        }
+        .fa-xmark {
+          cursor: pointer;
+        }
       }
     }
   }
