@@ -85,6 +85,17 @@ a {
   padding: 15px 0;
 }
 
+.detailsBtn {
+  margin: 20px 0;
+  padding: 10px 10px;
+  width: 120px;
+  outline: none;
+  border: none;
+  color: #25715d;
+  background-color: #d8e3d5;
+  padding: 15px 0;
+}
+
 .email {
   padding: 10px 10px;
   border: none;
@@ -95,6 +106,10 @@ a {
 
 .footer-input {
   background-color: transparent;
+}
+
+.search {
+  margin-bottom: 20px;
 }
 
 header {
@@ -132,8 +147,28 @@ header .header-right .fa-bars {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  header .header-right .fa-bars {
+  header .header nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    background-color: #25715d;
+  }
+  header .header nav ul {
+    flex-direction: column;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+  }
+  header .header nav.show {
     display: block;
+  }
+  header .header .fa-bars {
+    display: block;
+  }
+  header .header .fa-xmark {
+    cursor: pointer;
   }
 }
 
@@ -417,6 +452,10 @@ span {
 
 .flowers-pricing {
   padding: 100px 0;
+}
+.flowers-pricing .flowers-pricing-page .load {
+  position: relative;
+  left: 45%;
 }
 .flowers-pricing .flowers-pricing-page .flowers-pricing-top {
   margin-bottom: 50px;

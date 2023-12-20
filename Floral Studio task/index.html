@@ -86,7 +86,7 @@
             <h2>Floral Studio</h2>
           </div>
           <div class="header-right">
-            <nav>
+            <nav class="h-nav">
               <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
@@ -96,7 +96,7 @@
                 <li><a href="#">Favorites</a></li>
               </ul>
             </nav>
-            <i class="fa-solid fa-bars"></i>
+            <i id="menu" class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
@@ -247,7 +247,7 @@
                   Lorem ipsum dolor sit amet, pri omnium verterem id, sit labore
                   dicunt an, ea civibus.
                 </p>
-                <button class="read-more-btn">Read More</button>
+                <button class="read-more-btn readMore">Read More</button>
               </div>
             </div>
             <div class="mission-right">
@@ -348,21 +348,33 @@
       <!-- Flowers Pricing -->
       <section class="flowers-pricing">
         <div class="container">
+
           <div class="flowers-pricing-page">
             <div class="flowers-pricing-top">
               <em>Devoted to wonderful beauty</em>
               <p class="fs-1">Flowers Pricing</p>
             </div>
-            <div class="flowers-pricing-cards">
-              <!-- <div class="pricing-card">
-                <div class="pricing-image">
-                  <img src="./assets/image/b2.jpg" alt="" />
-                </div>
-                <p>Dahlia</p>
-                <p>$45</p>
-              </div> -->
+            
+            <input type="search" placeholder="Search" class="search email footer-input">
+            <button class="read-more-btn sort">Ascending</button>
+          
+            <div class="favorites">
+              <i class="fa-regular fa-heart"></i>
+              <div class="flowers-pricing-cards">
+                <!-- <div class="pricing-card">
+                  <div class="pricing-image">
+                    <img src="./assets/image/b2.jpg" alt="" />
+                  </div>
+                  <p>Dahlia</p>
+                  <p>$45</p>
+                </div> -->
+              </div>
+
             </div>
-            <button class="read-more-btn load">Load more</button>
+            <div class="btn-load">
+
+              <button class="read-more-btn load">Load more</button>
+            </div>
           </div>
         </div>
       </section>

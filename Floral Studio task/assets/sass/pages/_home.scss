@@ -265,6 +265,11 @@ span {
 .flowers-pricing {
   padding: 100px 0;
   .flowers-pricing-page {
+    .load{
+      position: relative;
+      left:45%;
+      }
+  
     .flowers-pricing-top {
       margin-bottom: 50px;
       text-align: center;
@@ -440,3 +445,4 @@ img {
   width: 500px;
   line-height: 2;
 }
+

@@ -28,10 +28,37 @@ header {
     }
     .fa-bars {
       display: none;
-      @media screen and (max-width: 767px) {
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+   
+    .header {
+      nav {
+        display: none;
+        position: fixed;
+        width: 100%;
+        top: 40px;
+        left: 0;
+
+        background-color:$color-header;
+        ul {
+          flex-direction: column;
+          height: 25vh;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      nav.show {
         display: block;
+      }
+      .fa-bars {
+        display: block;
+
+      }
+      .fa-xmark {
+        cursor: pointer;
       }
     }
   }
-
 }
