@@ -41,6 +41,8 @@ async function deleteIcon(id, btn) {
   }
 }
 
+let editStatus = false;
+let elId;
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
   let newObj = {
@@ -49,24 +51,35 @@ form.addEventListener("submit", async function (e) {
     price: allInputs[2].value,
   };
   console.log(newObj);
-  await axios.post(`${BASE_URL}`, newObj);
+ 
+  if (!editStatus) {
+    await axios.post(`${BASE_URL}`, newObj);
+   
+  } else{
+    await axios.patch(`${BASE_URL}/${elId}`, newObj);
+  }
+  
+});
 
-  if ((submit.innerText = "submit")) {
-    submit.innerText = "Edit";
-  } else if ((submit.innerText = "Edit")) {
-      await axios.patch(`${BASE_URL}/${id}`, newObj);
-    
-}
- });
+
+
 
 async function editIcon(id, btn) {
-    let res = await axios(`${BASE_URL}/${id}`);
-    let data = res.data;
-    submit.innerText = "Edit";
-    console.log(id);
-    console.log(allInputs[0]);
-    //   allInputs[0].value = data.image;
-    allInputs[1].value = data.name;
-    allInputs[2].value = data.price;
-    
+  editStatus=true;
+  elId = id;
+  let res = await axios(`${BASE_URL}/${id}`);
+  allInputs[0].value = "";
+  allInputs[1].value = "";
+  allInputs[2].value = "";
+  let data = res.data;
+  submit.innerText = "Edit";
+  console.log(id);
+  console.log(allInputs[0]);
+  //   allInputs[0].value = data.image;
+  allInputs[1].value = data.name;
+  allInputs[2].value = data.price;
+
+
+
+  
 }

@@ -6,7 +6,6 @@ header {
   z-index: 12;
   position: fixed;
   .header {
-  
     @include flexbox();
     color: $color-white;
 
@@ -15,11 +14,15 @@ header {
         ul {
           display: flex;
           column-gap: 20px;
+          li {
+            border: none;
+          }
           li a {
             color: $color-white;
             transition: all 0.5s;
+            border-bottom: none;
           }
-          :hover {
+          &:hover {
             color: $color-hoverA;
             border-bottom: 1px solid $color-hoverA;
           }
@@ -38,12 +41,12 @@ header {
     .header {
       .header-right {
         nav {
-           position: absolute;
+          position: absolute;
           display: none;
           width: 100%;
           top: 50px;
           left: 0;
-          
+
           background-color: $color-header;
           ul {
             flex-direction: column;
@@ -54,7 +57,6 @@ header {
         }
         nav.show {
           display: block;
-        
         }
         .fa-bars {
           display: block;

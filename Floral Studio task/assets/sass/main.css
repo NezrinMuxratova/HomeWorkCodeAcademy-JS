@@ -142,6 +142,7 @@ header .header .header-right nav ul {
 header .header .header-right nav ul li a {
   color: #FFFFFF;
   transition: all 0.5s;
+  border-bottom: none;
 }
 header .header .header-right nav ul :hover {
   color: #faba84;
@@ -704,5 +705,4 @@ footer .footer .footer-right {
        column-gap: 20px;
 }
 footer .footer .footer-right nav ul li:hover {
-  border-bottom: 1px solid #25715d;
 }/*# sourceMappingURL=main.css.map */

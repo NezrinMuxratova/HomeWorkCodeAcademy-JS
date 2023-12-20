@@ -13,12 +13,6 @@
       "price": 45
     },
     {
-      "id": 5,
-      "images": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b2.jpg",
-      "name": "Mazus",
-      "price": 45
-    },
-    {
       "id": 6,
       "images": "https://mobirise.com/extensions/floram4/floral-studio/assets/images/b3.jpg",
       "name": "Pansies",
@@ -31,28 +25,22 @@
       "price": 45
     },
     {
-      "images": "./assets/image/3.png",
-      "name": "Kasper Osborne",
-      "price": "Donna Barry",
-      "id": 8
+      "images": "./assets/image/b3.jpg",
+      "name": "Melyssa Williamson",
+      "price": "James Nicholson",
+      "id": 13
     },
     {
       "images": "./assets/image/b2.jpg",
-      "name": "",
-      "price": "",
-      "id": 10
+      "name": "Desiree Michael",
+      "price": "Mariam Dunlap",
+      "id": 16
     },
     {
-      "images": "./assets/image/undefined",
-      "name": "Dahliaaaaaa",
+      "images": "./assets/image/b3.jpg",
+      "name": "11111111111111111",
       "price": "45",
-      "id": 12
-    },
-    {
-      "images": "./assets/image/undefined",
-      "name": "Pansiesrtget",
-      "price": "45",
-      "id": 13
+      "id": 18
     }
   ]
 }
