@@ -464,16 +464,13 @@ img {
     }
   }
 }
-table{
-  th{
-    color:$color-header;
+table {
+  th {
+    color: $color-header;
   }
 }
 tbody {
-  text-align: center;
-
   tr {
-
     td {
       img {
         width: 10%;
@@ -486,10 +483,14 @@ tbody {
   }
 }
 
-form{
-  padding:20px;
- display: flex;
- flex-direction: column;
- justify-content:center ;
- align-items: center;
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recipient-name {
+  margin-left: 92px;
+  width: 315px;
 }

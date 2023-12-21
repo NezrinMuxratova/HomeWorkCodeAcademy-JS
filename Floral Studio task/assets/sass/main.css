@@ -665,9 +665,6 @@ table th {
   color: #25715d;
 }
 
-tbody {
-  text-align: center;
-}
 tbody tr td img {
   width: 10%;
   display: flex;
@@ -681,6 +678,11 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.recipient-name {
+  margin-left: 92px;
+  width: 315px;
 }
 
 footer {
@@ -713,7 +715,3 @@ footer .footer .footer-right {
 footer .footer .footer-right nav ul li:hover {
   border-bottom: 1px solid #25715d;
 }/*# sourceMappingURL=main.css.map */
-
-table th{
-  color:#25715d;
-}

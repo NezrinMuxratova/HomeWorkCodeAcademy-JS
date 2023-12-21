@@ -26,7 +26,8 @@ let sort = document.querySelector(".sort");
 let menuIcon = document.querySelector("#menu");
 let nav = document.querySelector(".h-nav");
 let favCount = document.querySelector(".fav-count");
-
+let sendBtn = document.querySelector(".send-btn");
+let sendBtnTwo = document.querySelector("#send-btn");
 let favorites = getFavoritesFromLocaleStorages();
 calculateFavCount(favorites.length);
 
@@ -34,8 +35,6 @@ let loadCard = [];
 let limit = 3;
 let products = null;
 let productsCopy = null;
-
- 
 
 async function getData() {
   let response = await axios(`${BASE_URL}`);
@@ -83,7 +82,7 @@ function drawFlowers(data) {
       this.className === "fa-regular fa-heart"
         ? (this.className = "fa-solid fa-heart")
         : (this.className = "fa-regular fa-heart");
-        let favoriteProducts = getFavoritesFromLocaleStorages();
+      let favoriteProducts = getFavoritesFromLocaleStorages();
 
       const favIndex = favoriteProducts.findIndex(
         (item) => item.id === element.id
@@ -115,7 +114,6 @@ function getFavoritesFromLocaleStorages() {
 function calculateFavCount(count) {
   favCount.textContent = count;
 }
-
 
 // LOADMORE
 loadMoreBtn.addEventListener("click", function () {
@@ -156,4 +154,36 @@ menuIcon.addEventListener("click", function () {
   this.classList.contains("fa-bars")
     ? (this.classList = "fa-solid fa-xmark")
     : (this.classList = "fa-solid fa-bars");
+});
+
+sendBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  let pElem = document.createElement("p");
+
+  let subDiv = document.querySelector(".sub-page");
+  pElem.style.background = " #25715d";
+  pElem.className = "senn-text";
+  pElem.style.color = "white";
+  pElem.style.padding = "10px 0";
+  pElem.textContent = "Thanks for filling out the form!";
+  subDiv.prepend(pElem);
+  setTimeout(() => {
+    pElem.remove()
+  }, 2000);
+});
+
+sendBtnTwo.addEventListener("click", function (e) {
+  e.preventDefault();
+  let pElem = document.createElement("p");
+  let subDivTwo = document.querySelector(".sub-page-two");
+  pElem.style.background = " #25715d";
+  pElem.className = "senn-text";
+  pElem.style.color = "white";
+  pElem.style.padding = "20px 0";
+  pElem.style.textAlign = "center";
+  pElem.textContent = "Thanks for filling out the form!";
+  subDivTwo.prepend(pElem);
+  setTimeout(() => {
+    pElem.remove()
+  }, 2000);
 });
