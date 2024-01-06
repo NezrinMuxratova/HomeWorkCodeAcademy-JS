@@ -1,0 +1,106 @@
+footer {
+  background-color: $color-header;
+  padding: 20px;
+  .footer {
+    @media screen and (max-width:767px) {
+      display: block;
+    }
+   display:flex ;
+   justify-content: space-between;
+   column-gap: 20px;
+   h5{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   }
+    .footer-one {
+      width: 30%;
+      @media screen and (max-width:767px) {
+        width: 100%;
+      }
+      p{
+        opacity: 0.5;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      a{
+        color: $color-login-btn;
+      }
+    }
+    .footer-two {
+      @media screen and (max-width:767px) {
+        width: 100%;
+      }
+      width: 30%;
+      .footer-text{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      p{
+        color: white;
+        opacity: 0.5;
+
+      }
+      span{
+        color: white;
+    font-size: 13px;
+
+      }
+    }
+    .footer-three {
+      @media screen and (max-width:767px) {
+        width: 100%;
+      }
+      width: 30%;
+      nav{
+        line-height: 2.5;
+        ul{
+            li{
+                a{
+                    color: $color-login-btn;
+                }
+            }
+        }
+      }
+    }
+    .footer-four {
+      @media screen and (max-width:767px) {
+        width: 100%;
+      }
+      width: 30%;
+      .icons{
+        .fa-brands{
+            transition: all 0.5s;
+            color: $color-login-btn;
+            border:1px solid rgb(160, 159, 159);
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 10px;
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+        }
+      }
+    }
+}
+.end-text{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    column-gap: 5px;
+    .footer-end-text{
+        opacity: 0.5;
+        color: white;
+
+    }
+    #colorlib{
+        color: $color-login-btn;
+        opacity: 1;
+    }
+}
+}

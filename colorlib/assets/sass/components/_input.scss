@@ -1,0 +1,16 @@
+.search{
+    padding: 5px 5px;
+    outline: none;
+    width: 30%;
+    
+}
+.news-input{
+padding: 15px;
+width: 30%;
+border: 1px solid gray;
+
+outline: none;
+&:hover{
+    border: 1px solid $color-header;
+}
+}
