@@ -148,6 +148,21 @@ function drawRobots(data) {
       getBasketCount(basket.length)
     
     });
+    // //basket
+		// const basketIcon = document.createElement('i');
+		// basketIcon.className = 'fa-solid fa-cart-shopping';
+
+		// basketIcon.addEventListener('click', function () {
+		// 	let basketItem = basket.find((item) => (item.id = element.id));
+		// 	console.log(basketItem);
+
+		// 	if (basketItem) {
+		// 		console.log('first');
+		// 		basketItem.count++;
+		// 	} else {
+		// 		console.log('last');
+		// 		const basketPush = products.find((item) => item.id === element.id);
+      // 		basket.push({ ...basketPush, count: 1 });
 
     /////////////////////////////////////////////////
 
@@ -167,7 +182,7 @@ function drawRobots(data) {
 
 
 function getBasketCount(){
-let basketCount = document.querySelector(".basket-count");
+// let basketCount = document.querySelector(".basket-count");
   
   basketCount.textContent=basket.reduce((acc,curr)=> acc+curr.count,0)
 }
