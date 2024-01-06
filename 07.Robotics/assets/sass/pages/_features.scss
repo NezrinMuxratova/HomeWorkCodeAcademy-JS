@@ -1,0 +1,65 @@
+#features{
+    background-image: url("./image/feature-bg.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top:50px ;
+    padding-bottom:50px ;
+    .features{
+        padding: 20px 0;
+
+        .features-top{
+            text-align: center;
+            color: white;
+            line-height: 2;
+            margin-bottom: 50px;
+        }
+        .features-bottom{
+
+            .features-cards{
+                display: flex;
+                row-gap: 20px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .f-card{
+                    @media screen and (max-width:1000px){
+                        width: 40%;
+                          }
+                          @media screen and (max-width:767px){
+                           width: 100%;
+                          }
+                    background-color: #fff;
+                    width: 30%;
+                    border-radius: 10px;
+                    padding: 30px;
+                    &:hover{
+                        .image{
+
+                            a{
+                              color: #f64f8e;
+                            }  
+                        }
+                    }
+                    .image{
+                        margin-bottom: 20px;
+                        a{
+                            color: black;
+                            font-weight: 700
+                        }
+                    }
+                    img{
+                        width: 20px;
+                    }
+                    .fa-solid{
+                        margin-top: 20px;
+                        margin-right: 20px;
+                        color: #f64f8e;
+
+                    }
+                }
+            }
+        }
+    }
+  
+}

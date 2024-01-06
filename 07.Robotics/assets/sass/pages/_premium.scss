@@ -1,0 +1,31 @@
+#premium-image {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  .premium-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+gap: 20px;
+
+          
+    .img1 {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+     
+      img {
+        transition: all 0.5;
+        @media screen and (max-width:1000px){
+            width: 100%;
+           }
+         @media screen and (max-width:767px){
+            width: 100%;
+           }
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

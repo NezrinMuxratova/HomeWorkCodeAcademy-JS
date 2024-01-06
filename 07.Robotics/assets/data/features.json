@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "img": "https://banner2.cleanpng.com/20180816/syp/kisspng-computer-icons-favicon-user-iconfinder-personal-we-yue-jia-fresh-my-user-icon-svg-png-icon-free-downl-5b7590572d9999.5378872315344313191868.jpg",
+      "title": "Expert Technicians ",
+      "description": "Usage of the Internet is becoming more common due to rapid advancement of technology and power."
+    },
+    {
+      "id": 2,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tbXwkTdXquz3XXGcqbajewZvNXq9VDMNZCIGlGQqMtcv0bFqE4RpClSfgiqubUCgclk&usqp=CAU",
+      "title": "Professional Services",
+      "description": "Usage of the Internet is becoming more common due to rapid advancement of technology and power."
+    },
+    {
+      "id": 3,
+      "img": "./assets/image/images (1).png",
+      "title": "Great Support",
+      "description": "Usage of the Internet is becoming more common due to rapid advancement of technology and power."
+    },
+    {
+      "id": 4,
+      "img": "https://p1.hiclipart.com/preview/748/15/762/education-icon-skill-icon-design-education-logo-emblem-symbol-circle-png-clipart.jpg",
+      "title": "Tecnhnical Skills",
+      "description": "Usage of the Internet is becoming more common due to rapid advancement of technology and power."
+    },
+    {
+      "id": 5,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjtOX2CE1E3yEar933GStZPxKWMfkcGGhWCQ&usqp=CAU",
+      "title": "Highly Recomended",
+      "description": "Usage of the Internet is becoming more common due to rapid advancement of technology and power."
+    },
+    {
+      "id": 6,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8AC0gEQCtgg5a2Sh5Zv1ojrkYSDzUjfBaiGABFWlGIVX6UJCA4NOo4MD9fcbMd-tNtXY&usqp=CAU",
+      "title": "Positive Reviews",
+      "description": "Usage of the Internet is becoming more common due to rapid advancement of technology and power."
+    }
+  ]
+}

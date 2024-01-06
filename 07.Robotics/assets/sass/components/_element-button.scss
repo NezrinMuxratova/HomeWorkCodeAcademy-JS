@@ -1,0 +1,149 @@
+.element-btn {
+  padding: 10px;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+
+.default {
+  background-color: #f9f9ff;
+  color: black;
+  &:hover {
+    background-color: white;
+  }
+}
+.default-two {
+  background-color: white;
+  color: blue;
+  &:hover {
+    background-color: #f9f9ff;
+    color: black;
+  }
+}
+.primary {
+  background-color: #8a90ff;
+  border: 1px solid #8a90ff;
+
+  &:hover {
+    border: 1px solid #8a90ff;
+    color: #8a90ff;
+    background-color: white;
+  }
+}
+.primary-two {
+  border: 1px solid #8a90ff;
+  color: #8a90ff;
+  background-color: white;
+  &:hover {
+    background-color: #8a90ff;
+    border: 1px solid #8a90ff;
+    color: white;
+  }
+}
+
+.success {
+  background-color: #4cd3e3;
+  border: 1px solid #4cd3e3;
+  &:hover {
+    border: 1px solid #4cd3e3;
+    color: #4cd3e3;
+    background-color: white;
+  }
+}
+.success-two {
+ border: 1px solid #4cd3e3;
+    color: #4cd3e3;
+    background-color: white;
+  &:hover {
+    background-color: #4cd3e3;
+    border: 1px solid #4cd3e3;
+    color: white;
+   
+  }
+}
+
+.info {
+  background-color: #38a4ff;
+  border: 1px solid #38a4ff;
+  &:hover {
+    border: 1px solid #38a4ff;
+    color: #38a4ff;
+    background-color: white;
+  }
+}
+.info-two {
+    border: 1px solid #38a4ff;
+    color: #38a4ff;
+    background-color: white;
+  &:hover {
+  background-color: #38a4ff;
+  border: 1px solid #38a4ff;
+  color: white;
+
+  }
+}
+.warning {
+  background-color: #f4e700;
+  border: 1px solid #f4e700;
+  &:hover {
+    border: 1px solid #f4e700;
+    color: #f4e700;
+    background-color: white;
+  }
+}
+.warning-two {
+border: 1px solid #f4e700;
+    color: #f4e700;
+    background-color: white;
+  &:hover {
+      background-color: #f4e700;
+  border: 1px solid #f4e700;
+  color: white;
+  }
+}
+.danger {
+  background-color: #f44a40;
+  border: 1px solid #f44a40;
+  &:hover {
+    border: 1px solid #f44a40;
+    color: #f44a40;
+    background-color: white;
+  }
+}
+.danger-two {
+    border: 1px solid #f44a40;
+    color: #f44a40;
+    background-color: white;
+ 
+  &:hover {
+    background-color: #f44a40;
+    border: 1px solid #f44a40;
+    color: white;
+  }
+}
+.btn-radius{
+    border-radius: 50px;
+}
+.btn-radius-two{
+    border-radius: 50px;
+    width: 10%;
+   
+}
+
+.e-large{
+    padding: 25px;
+}
+.large{
+    padding: 20px;
+}
+.default{
+    padding: 15px;
+}
+.medium{
+    padding: 10px;
+}
+.small{
+    padding: 5px;
+}

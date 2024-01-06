@@ -1,0 +1,118 @@
+footer {
+  background-image: url("./image/footer-bg.jpg.webp");
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top:50px ;
+    padding-bottom:50px ;
+  .footer {
+    padding: 50px 0;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    @media screen and (max-width:1000px){
+        display: block;
+         }
+    .footer-one {
+        @media screen and (max-width:1000px){
+           width: 100%;
+             }
+      h2 {
+        margin-bottom: 20px;
+      }
+      nav {
+        line-height: 2;
+        ul {
+          li {
+            a {
+              color: white;
+              transition: all 0.5s;
+              &:hover {
+                color: #828fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-two {
+        @media screen and (max-width:1000px){
+            width: 100%;
+              }
+      .footer-email {
+        display: flex;
+        gap: 20px;
+        @media screen and (max-width:300px){
+          display: block;
+              }
+      }
+      p {
+        margin-bottom: 15px;
+        margin-top: 30px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+    .footer-three {
+        @media screen and (max-width:1000px){
+            width: 100%;
+              }
+      h2 {
+        margin-bottom: 20px;
+      }
+      nav {
+        ul {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 50px 0;
+   
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:1000px){
+        display: block;
+         }
+    .footer-bottom-left {
+        @media screen and (max-width:1000px){
+            width: 100%;
+              }
+      display: flex;
+      gap: 5px;
+      color: white;
+      .f-heart {
+        color: #828fff;
+      }
+      .purple-text {
+        color: #828fff;
+      }
+    }
+    .footer-bottom-right {
+        @media screen and (max-width:300px){
+          display: block;
+              }
+      display: flex;
+      gap: 10px;
+      
+      .icon {
+        padding:10px 20px;
+        background-color: black;
+        &:hover{
+            background-image: -webkit-linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+          
+        }
+        a {
+            color: white;
+          
+        }
+      }
+    }
+  }
+}

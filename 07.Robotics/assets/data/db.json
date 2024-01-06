@@ -1,0 +1,67 @@
+{
+  "robots": [
+    {
+      "id": 1,
+      "image": "https://preview.colorlib.com/theme/robotics/img/p1.png.webp",
+      "title": "The Upper Eye",
+      "price":"30000$",
+      "information": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 2,
+      "image": "https://preview.colorlib.com/theme/robotics/img/p2.png.webp",
+      "title": "The Crab Wheel",
+      "price":"60000$",
+      "information": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 3,
+      "image": "https://preview.colorlib.com/theme/robotics/img/p3.png.webp",
+      "title": "The Plug Ninja",
+      "price":"300800$",
+      "information": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 4,
+      "image": "https://preview.colorlib.com/theme/robotics/img/p4.png.webp",
+      "title": "The Controller",
+      "price":"80000$",
+      "information": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 5,
+      "image": "https://preview.colorlib.com/theme/robotics/img/p1.png.webp",
+      "title": "The Upper Eye",
+      "price":"55000$",
+      "information": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 6,
+      "image": "https://preview.colorlib.com/theme/robotics/img/p2.png.webp",
+      "title": "The Crab Wheel",
+      "price":"75000$",
+      "information": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 7,
+      "image": "https://preview.colorlib.com/theme/robotics/img/p3.png.webp",
+      "title": "The Plug Ninja",
+      "price":"78000$",
+      "information": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 8,
+      "image": "https://preview.colorlib.com/theme/robotics/img/p4.png.webp",
+      "title": "The Controller",
+      "price":"30120$",
+      "information": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 9,
+      "image": "https://preview.colorlib.com/theme/robotics/img/p4.png.webp",
+      "title": "The Controller",
+      "price":"37890$",
+      "information": "Who are in extremely love with eco friendly system."
+    }
+  ]
+}

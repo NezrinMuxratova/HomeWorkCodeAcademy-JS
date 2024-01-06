@@ -1,0 +1,82 @@
+#banner{
+    background-image: url("./image/banner-bg.jpg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+  
+    .home-page{
+        padding-top: 150px;
+        @media screen and (max-width:767px){
+          
+              display: block;
+            
+            
+         }
+        // height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .home-right{
+            @media screen and (max-width:767px){
+          
+               width: 100%;
+              
+              
+           }
+            width: 50%;
+            .text-one{
+                color: white;
+                font-size: 70px;
+                @media screen and (max-width:767px){
+          
+                   font-size: 50px;
+                   
+                   
+                }
+            }
+            .text-two{
+                color: white;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        };
+        .home-left{
+         
+
+            width: 50%;
+            img{
+                width: 100%;
+            }
+           img{
+            max-width: 100%;
+           }
+           @media screen and (max-width:767px){
+          
+            max-width: 100%;
+           img{
+            width: 100%;
+           }
+           
+        }
+        }
+
+    }
+}
+@media screen and (max-width:1000px){
+    .home-page{
+     .home-left{
+         width: 30%;
+         img{
+             width: 100%;
+         }
+     }
+    } 
+    .home-right{
+     width: 30%;
+     .text-one{
+       font-size: 10px;
+     }
+    
+    }
+ }

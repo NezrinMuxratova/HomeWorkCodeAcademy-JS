@@ -1,0 +1,51 @@
+.search{
+    margin-bottom: 50px;
+    outline: none;
+    padding: 5px;
+    border: 5px solid #fcf8ff;
+    border-radius: 20px;
+    background-color: white;
+    width: 25%;
+    &:hover{
+        border: 5px solid #b092ff;
+
+        background-color: #fcf8ff;
+    }
+    &::placeholder{
+        color: #b092ff;
+    }
+}
+
+.footer-input{
+padding: 10px;
+outline: none;
+border-radius: 20px;
+width: 70%;
+}
+.blog-home-search{
+    padding: 10px;
+    // width: ;
+    outline: none;
+    background-color: #EEEE;
+    border: none;
+    position: relative;
+}
+.fa-magnifying-glass{
+    position: absolute;
+   bottom: 180px;
+   right: 200px;
+}
+
+.com-input{
+    outline: none;
+    padding: 5px;
+    background-color: #F9F9FF;
+    border: 3px solid #F9F9FF;
+    &:hover{
+        border: 3px solid #b092ff;
+    }
+}
+.contact-input{
+    
+    width: 120%;
+}

@@ -1,0 +1,83 @@
+
+#life-change{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    .life-change{
+       display: flex; 
+       justify-content: space-between;
+       align-items: center;
+       @media screen and (max-width:1000px){
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+      }
+       .life-change-left{
+        @media screen and (max-width:1000px){
+          width: 100%;
+          margin-bottom: 20px;
+          h1{
+            width: 100%;
+          }
+        }
+        width: 50%;
+        .color-purple-text{
+            color: #828fff;
+            font-size: 12px;
+        }
+        h1{
+            font-size: 2.2rem;
+        
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .life-text-2{
+ opacity: 0.7;
+ margin-bottom: 20px;
+ margin-top: 20px;
+ width: 80%;
+        }
+       }
+       .life-change-right{
+        @media screen and (max-width:1000px){
+          width: 100%;
+        }
+        width: 50%;
+        .about-video-right{
+            width: 100%;
+        }
+       }
+  
+    }
+
+}
+
+
+
+
+.about-video-right {
+  background: url("./image/video-bg.jpg.webp") no-repeat center;
+  background-size: cover;
+  height: 330px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .overlay-bg {
+      background-image:-webkit-linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+      opacity: .8;
+  }
+  .overlay {
+      height: 330px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    ;
+  }
+  .play-btn{
+    z-index: 3;
+  }
+}

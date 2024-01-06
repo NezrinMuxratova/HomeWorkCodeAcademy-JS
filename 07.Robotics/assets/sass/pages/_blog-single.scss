@@ -1,0 +1,68 @@
+.toner-text {
+    @media screen  and (max-width:1000px){
+        display: block;
+    }
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  .box-1 {
+    display: flex;
+    gap: 20px;
+    a {
+      h6 {
+        color: black;
+      }
+    }
+  }
+ 
+}
+
+.comments{
+    margin-top: 100px;
+    h6{
+margin-bottom: 100px;
+    }
+    .comment-card{
+        display: flex;
+        @media screen  and (max-width:1000px){
+            display: block;
+        }
+        justify-content: space-between;
+        .card-left{
+            @media screen  and (max-width:1000px){
+                display: block;
+            }
+            display: flex;
+            gap: 10px;
+            line-height: 2;
+            .comment-text{
+             h5{
+                a{
+                    color: black;
+                }
+             }
+                .com-text-3{
+                    opacity: .3 !important;
+                }
+            }
+        }
+    }
+}
+
+
+.live-reply{
+    h5{
+        margin-bottom: 20px;
+    }
+.comment-information{
+    display: flex;
+    @media screen  and (max-width:1000px){
+        display: block;
+    }
+    .all-input{
+        input{
+            margin-bottom: 20px;
+        }
+    }
+}
+}

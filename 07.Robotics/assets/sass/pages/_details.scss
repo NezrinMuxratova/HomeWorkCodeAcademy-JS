@@ -1,0 +1,27 @@
+.details{
+    padding-top: 120px;
+    .details-page{
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        .details-text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .details-image{
+            // border: 1px solid gray;
+            // padding: 150px;
+
+           img{
+            width: 180%;}
+        }
+        .details-information{
+            width: 50%;
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

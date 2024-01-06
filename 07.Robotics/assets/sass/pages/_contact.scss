@@ -1,0 +1,52 @@
+#contact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .contact{
+        @media screen  and (max-width:1000px){
+            display: block;
+        }
+        display: flex;   justify-content: space-between;
+        .contact-one{
+            .icon-one{
+                @media screen  and (max-width:1000px){
+                    display: block;
+                }
+                display: flex;
+                align-items: center;
+             
+                i{
+                    color: #b092ff;
+                    font-size: 2rem;
+                }
+                gap: 20px;
+                div{
+
+                    line-height: 2;
+                }
+            }
+            
+        }
+        .contact-two{
+            @media screen  and (max-width:1000px){
+                display: block;
+            }
+            display: flex;
+            justify-content: space-between;
+            .all-input{
+                input{
+margin-bottom: 20px;
+                    display: block;
+                    @media screen  and (max-width:1000px){
+                      width: 50%;
+                    }
+                }
+            }
+        }
+        textarea{
+            width: 100%;
+        }
+    }
+    .contact-btn{
+        text-align: right;
+    }
+}

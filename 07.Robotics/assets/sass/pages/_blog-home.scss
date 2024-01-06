@@ -1,0 +1,195 @@
+#blog-home{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .blog-home{
+        display: flex;
+        justify-content: space-between;
+            @media screen  and (max-width:1000px){
+                display: block;
+            }
+.blog-home-left-cards{
+    width: 70%;
+    @media screen  and (max-width:1000px){
+      width: 100%;
+    }
+.image{
+    img{
+        width: 100%;
+    }
+}
+    nav{
+        ul{display: flex;
+        li{
+            margin-top: 20px;
+            a{
+
+                color: black;
+                opacity: .8;
+                transition: all 0.5s;
+                &:hover{
+                    color: #828fff;
+                }
+            }
+        }}
+    }
+    a{
+        h1{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: black;
+      
+            font-size: 3rem;
+        }
+    }
+    p{
+        opacity: .8;
+        margin-bottom: 20px;
+    }
+    .cards-bottom{
+        @media screen  and (max-width:1000px){
+            display: block;
+        }
+        display: flex;
+        justify-content: space-between;
+        .icons{
+            display: flex;
+            gap: 20px;
+
+        }
+        .bottom-right{
+            width: 30%;
+            display: flex;
+            gap: 20px;
+            .icon{
+                a{
+                    i{
+                        color: gray;
+transition: all 0.5s;
+&:hover{
+    color: black;
+}
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog-home-right{
+    .blog-home-right-boxes{
+        margin-bottom: 20px;
+        border: 1px solid rgb(205, 199, 199);
+        padding: 25px 40px;
+        text-align: center;
+
+    }
+    .boxes-two{
+        a{
+            h4{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: black;
+            }
+        }
+        p{
+            opacity: .8;
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+        .bottom-right{
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+            .icon{
+                a{
+                    i{
+                        color: gray;
+transition: all 0.5s;
+&:hover{
+    color: black;
+}
+                    }
+                }
+            }
+        }
+    }
+    .boxes-three{
+        nav{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                border-bottom: 1px solid rgb(205, 199, 199);
+                transition: all .5s;
+                &:hover{
+                    color: #828fff;
+                    border-bottom: 1px solid #828fff;
+                    li{
+                        color: #828fff;
+                        a{
+                            color: #828fff;
+                        }
+                    }
+                }
+                li{
+                    transition: all .5s;
+                   
+                    a{
+                        color: black;
+                        transition: all .5s;
+                       
+                    }
+                }
+            }
+        }
+    }
+    .boxes-four{
+        h4{
+            margin-bottom: 20px;
+        }
+        .post-card{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: space-between;
+            .image{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+            .post-text{
+                width: 50%;
+                
+                a{
+                    p{
+                        color: black;
+                        text-align: left;
+                        font-weight: 700;
+                        margin-bottom: 30px;
+                    }
+                }
+                p{
+                    opacity: .8;
+                }
+
+            }
+        }
+    }
+    .boxes-five{
+        h4{
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .buttons{
+            text-align: left;
+        }
+    }
+    }
+}
+
+    }

@@ -1,0 +1,132 @@
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+z-index: 999;
+  .fa-chevron-down {
+    font-size: 10px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-right {
+      nav {
+        ul {
+          display: flex;
+          position: relative;
+          gap: 20px;
+
+          li {
+            transition: all 0.5s;
+            &:hover ul.dropdown {
+              display: block;
+            }
+            a {
+              color: white;
+            }
+            .dropdown {
+              width: 30%;
+              position: absolute;
+              z-index: 99;
+              display: none;
+              background-color: white;
+              line-height: 2;
+              padding: 10px;
+            }
+            li {
+              display: block;
+              a {
+                color: black;
+                transition: all 0.5s;
+                &:hover {
+                  color: #bb95ff;
+                }
+              }
+            }
+            .list {
+              transition: all 0.5s;
+              &:hover ul#dropdown {
+                display: block;
+              }
+              #dropdown {
+                width: 100%;
+                position: absolute;
+                z-index: 99;
+                top: 60px;
+                left: 80px;
+                display: none;
+                background-color: white;
+                line-height: 2;
+                padding: 10px;
+                color: black;
+                li {
+                  display: block;
+                  a {
+                    transition: all 0.5s;
+                    &:hover {
+                      color: #bb95ff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .fa-bars {
+        display: none;
+        color: white;
+        
+      }
+      .fa-xmark {
+        color: white;
+      }
+    }
+  }
+}
+
+.header-scrolled {
+  background: rgba(138, 144, 255, 0.9);
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 1100px) {
+
+  header {
+    .header {
+      .header-right {
+        nav {
+          position: absolute;
+          display: none;
+          width: 40%;
+          // height: 87.3vh;
+          top: 0px;
+          left: 0;
+          background-color: black;
+          height: 100vh;
+          ul {
+            font-weight: 700;
+            padding-left: 20px;
+            padding-top: 30px;
+            flex-direction: column;
+            // height: 25vh;
+            align-items: left;
+            justify-content: left;
+          }
+        }
+        .show {
+          display: block;
+        }
+        .fa-bars {
+          display: block !important;
+          font-size: 2rem;
+        }
+        .fa-xmark {
+          cursor: pointer;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
