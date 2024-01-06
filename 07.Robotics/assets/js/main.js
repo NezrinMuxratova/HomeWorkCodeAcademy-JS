@@ -122,25 +122,28 @@ function drawRobots(data) {
     //basket
     const basketIcon = document.createElement("i");
     basketIcon.className = "fa-solid fa-cart-shopping";
-
+    
     basketIcon.addEventListener("click", function () {
-      let basketProducts = getProductsToLocalSotarge();
+      
+      const basketPush=products.find((item)=>item.id===element.id)
+      basket.push(basketPush)
+  
 
-      const basketIndex = basketProducts.findIndex(
+      const basketIndex = products.findIndex(
         (item) => item.id === element.id
       );
-
-      console.log(basketProducts);
-
-      
-
-      if (basketIndex > -1) {
-        basket[basketIndex].count = basket[basketIndex].count + 1;
-        console.log(basket[basketIndex]);
-      } else {
-        basket.push({ count: 1, basketIndex: basketIndex });
-      }
-  
+        //  console.log(basketIndex);
+         
+        if (basketIndex > -1) {
+          basket.find((item)=>{
+            return   item.count = item.count + 1;
+            
+          })
+        } else {
+          basket.push({ count: 1, basketIndex: basketIndex });
+        }
+        console.log(basket);
+   
       setProductsToLocalSotargeTwo(basket);
       getBasketCount(basket.length)
     
